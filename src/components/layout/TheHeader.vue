@@ -7,8 +7,8 @@ import { RouterLink, RouterView } from "vue-router";
     <nav class="flex justify-between">
       <RouterLink to="/" class="">Julia Dyrdal</RouterLink>
       <span class="">
-        <RouterLink to="/projects" class="">Projects</RouterLink>
-        <RouterLink to="/about" class="pl-8">Experience</RouterLink>
+        <RouterLink to="/projects" class="hover:underline decoration-primary-medium">Projects</RouterLink>
+        <RouterLink to="/about" class="pl-8 hover:underline decoration-primary-medium">Experience</RouterLink>
         <a class="pl-8 text-primary-medium underline" href="mailto:hello@juliadyrdal.com">hello@juliadyrdal.com</a>
       </span>
     </nav>

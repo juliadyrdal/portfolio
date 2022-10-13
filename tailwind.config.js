@@ -16,12 +16,13 @@ module.exports = {
       background: {
         beige: '#F6F6F6',
       },
+      drops: '#487792',
     },
     fontFamily: {
-      sans: ['Graphik', 'sans-serif'],
-      serif: ['Merriweather', 'serif'],
+      sans: ['Roboto', 'sans-serif'],
+      serif: ['utile-display', 'serif'],
     },
     extend: {},
   },
   plugins: [],
-}
+};
