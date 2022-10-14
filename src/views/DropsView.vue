@@ -12,7 +12,7 @@ import { RouterLink, RouterView } from "vue-router";
             <h1 class="text-2xl">
               <span class="pl-6 text-sm uppercase font-bold">A UX Case Study</span><br />
               <span
-                class="inline-block pl-4 pb-2 text-drops font-serif font-medium text-4xl md:text-5xl lg:text-9xl"
+                class="inline-block pl-4 pb-2 text-drops font-serif font-medium text-9xl"
                 >Drops</span
               >
             </h1>

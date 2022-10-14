@@ -16,27 +16,27 @@ import { RouterLink, RouterView } from "vue-router";
           >
         </div>
         <div class="pl-4 mt-4 lg:mt-6 mb-16 mr-24">
-          <p class="sm:text-sm md:text-base lg:text-lg leading-9">
+          <p class="sm:text-sm md:text-base lg:text-lg">
             I also enjoy making designs come true using
-            <span class="bg-primary-light text-sm font-semibold px-3 py-1 bg-slate-100 rounded-full">
+            <span class="bg-primary-lighter text-sm font-semibold px-3 py-1 bg-slate-100 rounded-full">
               Javascript
             </span>
             ,
-            <span class="bg-primary-light text-sm font-semibold px-3 py-1 bg-slate-100 rounded-full"
+            <span class="bg-primary-lighter text-sm font-semibold px-3 py-1 bg-slate-100 rounded-full"
               >HTML</span
             >
             and
-            <span class="bg-primary-light text-sm font-semibold px-3 py-1 bg-slate-100 rounded-full">
+            <span class="bg-primary-lighter text-sm font-semibold px-3 py-1 bg-slate-100 rounded-full">
               CSS</span
             >, like this portfolio, which I made with
-            <span class="bg-primary-light text-sm font-semibold px-3 py-1 bg-slate-100 rounded-full"
+            <span class="bg-primary-lighter text-sm font-semibold px-3 py-1 bg-slate-100 rounded-full"
               >Vuejs</span
             >,
-            <span class="bg-primary-light text-sm font-semibold px-3 py-1 bg-slate-100 rounded-full"
+            <span class="bg-primary-lighter text-sm font-semibold px-3 py-1 bg-slate-100 rounded-full"
               >Tailwind</span
             >
             and
-            <span class="bg-primary-light text-sm font-semibold px-3 py-1 bg-slate-100 rounded-full"
+            <span class="bg-primary-lighter text-sm font-semibold px-3 py-1 bg-slate-100 rounded-full"
               >Sanity.io</span
             >.
           </p>
