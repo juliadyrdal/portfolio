@@ -6,9 +6,9 @@ import { RouterLink, RouterView } from "vue-router";
   <section class="bg-primary-light pb-8">
     <div class="container mx-auto flex text-secondary">
       <div class="pt-24 md:pt-32 lg:pt-40 pl-4 pr-2 basis-1/2">
-        <p class="sm:text-base md:text-2xl">
-          <span class="pl-6 inline-block font-medium">Hi, I'm Julia, a</span>
-        </p>
+        <div class="flex items-end relative pb-2">
+          <p class="pl-6 pb-5 inline-block text-lg font-medium">Hi, I'm </p> <img src="../../assets/multiplayer.svg" alt="" class="absolute left-2 bottom-2">
+        </div>
         <div class="inline-block bg-[url('../assets/hero-illustration-short.svg')] bg-contain bg-no-repeat flex justify-start content-center">
           <h1
             class="inline-block lg:pb-5 lg:pt-4 2xl:pb-8 2xl:pt-4 px-2 text-primary-medium font-serif text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-black underline decoration-2 md:decoration-3 2xl:decoration-4 decoration-white"
