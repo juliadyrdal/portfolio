@@ -16,7 +16,7 @@ module.exports = {
       background: {
         beige: '#F6F6F6',
       },
-      drops: '#487792',
+      drops: '#0087B1',
     },
     fontFamily: {
       sans: ['Roboto', 'sans-serif'],

@@ -5,9 +5,9 @@ import { RouterLink, RouterView } from "vue-router";
 <template>
   <section class="bg-primary-light pb-8">
     <div class="container mx-auto flex text-secondary">
-      <div class="pt-24 md:pt-32 lg:pt-40 pl-4 pr-2 basis-1/2">
+      <div class="pt-24 md:pt-32 lg:pt-56 pl-4 pr-2 basis-1/2">
         <div class="flex items-end relative pb-2">
-          <p class="pl-6 pb-5 inline-block text-lg font-medium">Hi, I'm </p> <img src="../../assets/multiplayer.svg" alt="" class="absolute left-2 bottom-2">
+          <p class="pl-6 pb-5 inline-block text-lg font-medium">Hi, I'm </p> <img src="../../assets/multiplayerandavatar.png" alt="" class="absolute left-1 bottom-2 w-1/4">
         </div>
         <div class="inline-block bg-[url('../assets/hero-illustration-short.svg')] bg-contain bg-no-repeat flex justify-start content-center">
           <h1
@@ -15,28 +15,28 @@ import { RouterLink, RouterView } from "vue-router";
             >&nbsp;UX designer.&nbsp;</h1
           >
         </div>
-        <div class="pl-4 mt-4 lg:mt-6 mb-16 mr-24">
-          <p class="sm:text-sm md:text-base lg:text-lg">
+        <div class="pl-2 mt-8 lg:mt-10 mb-16 mr-24">
+          <p class="md:text-lg">
             I also enjoy making designs come true using
-            <span class="bg-primary-lighter text-sm font-semibold px-3 py-1 bg-slate-100 rounded-full">
+            <span class="text-primary-medium font-semibold bg-slate-100 rounded-full">
               Javascript
             </span>
             ,
-            <span class="bg-primary-lighter text-sm font-semibold px-3 py-1 bg-slate-100 rounded-full"
+            <span class="text-primary-medium font-semibold bg-slate-100 rounded-full"
               >HTML</span
             >
             and
-            <span class="bg-primary-lighter text-sm font-semibold px-3 py-1 bg-slate-100 rounded-full">
+            <span class="text-primary-medium font-semibold bg-slate-100 rounded-full">
               CSS</span
             >, like this portfolio, which I made with
-            <span class="bg-primary-lighter text-sm font-semibold px-3 py-1 bg-slate-100 rounded-full"
+            <span class="text-primary-medium font-semibold bg-slate-100 rounded-full"
               >Vuejs</span
             >,
-            <span class="bg-primary-lighter text-sm font-semibold px-3 py-1 bg-slate-100 rounded-full"
+            <span class="text-primary-medium font-semibold bg-slate-100 rounded-full"
               >Tailwind</span
             >
             and
-            <span class="bg-primary-lighter text-sm font-semibold px-3 py-1 bg-slate-100 rounded-full"
+            <span class="text-primary-medium font-semibold bg-slate-100 rounded-full"
               >Sanity.io</span
             >.
           </p>
