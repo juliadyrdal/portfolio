@@ -15,7 +15,6 @@ const { data: posts } = useSanityFetcher(`*[_type == "post"]{
   <TheHero />
   <main class="mx-16">
     <section class="flex justify-center">
-      <p class="md:text-sm lg:text-base py-10">Check out my <RouterLink to="/" class="text-primary-medium font-bold underline">UX projects</RouterLink>, my <a href="#" class="text-primary-medium font-bold underline">Github profile</a>, or get in touch on <a href="#" class="text-primary-medium font-bold underline">LinkedIn</a> or at <a href="#" class="text-primary-medium font-bold underline">hello@juliadyrdal.com</a></p>
     </section>
 
     <section class="container mx-auto p-4">
