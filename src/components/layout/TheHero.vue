@@ -7,7 +7,8 @@ import { RouterLink, RouterView } from "vue-router";
     <div class="container mx-auto flex text-secondary">
       <div class="pt-24 md:pt-32 lg:pt-56 pl-4 pr-2 basis-1/2">
         <div class="flex items-end relative pb-2">
-          <p class="pl-6 pb-5 inline-block text-lg font-medium">Hi, I'm </p> <img src="../../assets/multiplayerandavatar.png" alt="" class="absolute left-1 bottom-2 w-1/4">
+          <p class="pl-6 pb-2 xl:pb-3 2xl:pb-5 inline-block text-lg font-medium">Hi, I'm<span class="pl-20 xl:pl-24 2xl:pl-32">a</span></p>
+          <img src="../../assets/multiplayerandavatar.png" alt="" class="absolute left-7 xl:left-3 2xl:left-1 bottom-2 w-1/4">
         </div>
         <div class="inline-block bg-[url('../assets/hero-illustration-short.svg')] bg-contain bg-no-repeat flex justify-start content-center">
           <h1
