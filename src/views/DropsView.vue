@@ -5,37 +5,110 @@ import { RouterLink, RouterView } from "vue-router";
 
 <template>
   <main class="text-black font-sans">
-  <section class="container mx-auto">
-    <div class="mt-20 flex items-center">
-    <div class="basis-1/2">
-      <h1 class="py-4 text-8xl font-medium">Drops</h1>
-      <p class="pt-8 pb-16 leading-8">Magna sunt aute nisi amet veniam laboris. Dolor ut do consequat non aliqua id adipisicing pariatur in in eiusmod elit. Ullamco sint eiusmod anim veniam sint. Culpa elit ullamco ullamco esse minim ut dolor.</p>
-    </div>
-    <div>
-      <img src="../assets/drops-hero-image.png" class="pl-8 basis-1/2 w-5/6" />
-    </div>
-    </div>
-    <div class="pb-4 border border-t-0 border-l-0 border-r-0">
-      <p class="py-2 font-semibold"><a href="#" class="pr-2 hover:underline">Process</a> | <a href="#" class="px-2 hover:underline">Solution</a> | <a href="#" class="pl-2 hover:underline">Prototype</a></p>
-    </div>
-  </section>
-  <section class="container mx-auto my-32">
-    <p class="py-2 text-lg text-font-primary font-medium">Global Issues</p>
-        <h2 class="py-3 text-black text-6xl font-medium">Local solutions</h2>
-        <p class="py-2 text-sm text-font-secondary uppercase text-font-primary">A user experience design course assignment</p>
-    <article class="mt-12 flex items-center bg-surface-primary">
-      <img src="../assets/drops-thumbnail.png" alt="" class="w-3/6">
-      <div class="mx-16 pr-12">
-        <p class="py-4 leading-7">Magna sunt aute nisi amet veniam laboris. Dolor ut do consequat non aliqua id adipisicing pariatur in in eiusmod elit. Ullamco sint eiusmod anim veniam sint. Culpa elit ullamco ullamco esse minim ut dolor.</p>
-        <p class="py-4 leading-7">Elit exercitation occaecat adipisicing consectetur aliqua culpa ea cillum tempor qui ea reprehenderit proident eu. Ex nostrud reprehenderit qui magna commodo proident cupidatat dolor id officia cillum laboris consectetur ullamco anim.</p>
+    <section class="container mx-auto">
+      <div class="mt-24 flex">
+        <div class="basis-1/2">
+          <h1 class="pt-8 text-8xl font-medium">Drops</h1>
+          <p class="pt-10 pb-12 leading-8">Magna sunt aute nisi amet veniam laboris. Dolor ut do consequat non aliqua id adipisicing pariatur in in eiusmod elit. Ullamco sint eiusmod anim veniam sint. Culpa elit ullamco ullamco esse minim ut dolor.</p>
+        </div>
+        <div class="basis-1/2 flex justify-end">
+          <img src="../assets/drops-hero-image.png" class="w-9/12 object-cover" />
+        </div>
       </div>
-    </article>
-  </section>
+      <div class="pb-4 mt-8 border border-gray border-t-0 border-l-0 border-r-0">
+        <p class="py-2 font-semibold"><span class="pr-2 pb-3">Skip to: </span><a href="#" class="pr-2 underline">Process</a> | <a href="#" class="px-2 underline">Solution</a> | <a href="#" class="pl-2 underline">Prototype</a></p>
+      </div>
+    </section>
+    <section class="container mx-auto my-32">
+      <p class="text-lg text-font-primary font-medium">Global Issues</p>
+      <h2 class="pt-4 pb-4 text-black text-6xl font-medium">Local solutions</h2>
+      <p class="py-3 text-sm text-font-primary font-medium uppercase text-font-primary">A user experience design course assignment</p>
+      <article class="mt-16 flex items-center bg-surface-primary">
+        <img src="../assets/drops-thumbnail.png" alt="" class="w-3/6">
+        <div class="mx-16 pr-12">
+          <p class="py-4 leading-7">Magna sunt aute nisi amet veniam laboris. Dolor ut do consequat non aliqua id adipisicing pariatur in in eiusmod elit. Ullamco sint eiusmod anim veniam sint. Culpa elit ullamco ullamco esse minim ut dolor.</p>
+          <p class="py-4 leading-7">Elit exercitation occaecat adipisicing consectetur aliqua culpa ea cillum tempor qui ea reprehenderit proident eu. Ex nostrud reprehenderit qui magna commodo proident cupidatat dolor id officia cillum laboris consectetur ullamco anim.</p>
+        </div>
+      </article>
+    </section>
+    <section>
+      <div class="container mx-auto pb-12">
+        <h2 class="text-4xl font-semibold">Case summary</h2>
+        <div class="mt-6 pt-6 border border-black border-l-0 border-b-0 border-r-0">
+          <ul class="flex pt-1">
+            <li class="mr-12 flex items-center text-sm"><img src="../assets/icons/academic.svg" alt="icon" class="pr-2 w-6"><span class="pr-1 font-semibold">Project type:</span>course assignment</li>
+            <li class="mr-12 flex items-center text-sm"><img src="../assets/icons/calendar.svg" alt="icon" class="pr-2 w-6"><span class="pr-1 font-semibold">Duration:</span>4 weeks, spring 2022</li>
+            <li class="flex items-center text-sm"><img src="../assets/icons/person.svg" alt="icon" class="pr-2 w-6"><span class="pr-1 font-semibold">Role:</span>solo UX project</li>
+          </ul>
+        </div>
+      </div>
+      <div class="py-16 bg-surface-light">
+        <div class="container mx-auto grid grid-cols-2 gap-32 leading-7">
+          <div>
+            <p class="pb-6"><span class="font-semibold">Magna sunt aute nisi</span> amet veniam laboris. Dolor ut do consequat non aliqua id adipisicing pariatur in in eiusmod elit. Ullamco sint eiusmod anim veniam sint. Culpa elit ullamco ullamco esse minim ut dolor. Elit exercitation occaecat adipisicing consectetur</p>
+            <p><span class="font-semibold">Elit exercitation occaecat</span> adipisicing consectetur aliqua culpa ea cillum tempor qui ea reprehenderit proident eu. Ex nostrud reprehenderit qui magna commodo proident cupidatat dolor id officia cillum laboris consectetur ullamco anim. Magna sunt aute nisi amet veniam laboris. Dolor ut do consequat non aliqua id adipisicing pariatur in in eiusmod elit.</p>
+          </div>
+          <div>
+            <p class="pb-6"><span class="font-semibold">Magna sunt aute nisi</span> amet veniam laboris. Dolor ut do consequat non aliqua id adipisicing pariatur in in eiusmod elit. Ullamco sint eiusmod anim veniam sint. Culpa elit ullamco ullamco esse minim ut dolor.</p>
+            <p><span class="font-semibold">Elit exercitation occaecat adipisicing</span> consectetur aliqua culpa ea cillum tempor qui ea reprehenderit proident eu. Ex nostrud reprehenderit qui magna commodo proident cupidatat dolor id officia cillum laboris consectetur ullamco anim.</p>
+            <div class="grid grid-cols-3 xl:grid-cols-11 mt-12">
+              <a href="#" class="col-start-2 col-span-2 xl:col-start-6 xl:col-span-6 px-6 py-4 bg-white text-sm hover:underline">View Figma prototype<img src="../assets/icons/button-arrow.svg" alt="arrow icon" class="inline pl-4"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="my-32">
+      <div class="container mx-auto pb-6 border-black border-t-0 border-l-0 border-r-0">
+        <h3 class="py-1 text-lg font-medium uppercase">Challenges</h3>
+        <h2 class="py-2 text-4xl font-semibold leading-10 w-1/3">Changing behaviour through influencing attitudes</h2>
+      </div>
+      <div class="ml-20 overflow-x-scroll scrollbar">
+        <ul class="my-12 grid grid-flow-col gap-10">
+          <li class="">
+            <article class="w-96">
+              <div class="">
+                <img src="../assets/challenge-1.png" alt="" class="" />
+                <p class="pt-6 text-sm"><span class="font-semibold">Magna sunt aute nisi</span> amet veniam laboris. Dolor ut do consequat non aliqua id adipisicing pariatur in in eiusmod elit. Ullamco sint eiusmod anim veniam sint.</p>
+              </div>
+            </article>
+          </li>
+          <li class="">
+            <article class="w-96">
+              <div class="">
+                <img src="../assets/challenge-1.png" alt="" class="" />
+                <p class="pt-6 text-sm"><span class="font-semibold">Magna sunt aute nisi</span> amet veniam laboris. Dolor ut do consequat non aliqua id adipisicing pariatur in in eiusmod elit. Ullamco sint eiusmod anim veniam sint.</p>
+              </div>
+            </article>
+          </li>
+          <li class="">
+            <article class="w-96">
+              <div class="">
+                <img src="../assets/challenge-1.png" alt="" class="" />
+                <p class="pt-6 text-sm"><span class="font-semibold">Magna sunt aute nisi</span> amet veniam laboris. Dolor ut do consequat non aliqua id adipisicing pariatur in in eiusmod elit. Ullamco sint eiusmod anim veniam sint.</p>
+              </div>
+            </article>
+          </li>
+          <li class="">
+            <article class="w-96">
+              <div class="">
+                <img src="../assets/challenge-1.png" alt="" class="" />
+                <p class="pt-6 text-sm"><span class="font-semibold">Magna sunt aute nisi</span> amet veniam laboris. Dolor ut do consequat non aliqua id adipisicing pariatur in in eiusmod elit. Ullamco sint eiusmod anim veniam sint.</p>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
 
 
 
 
-    <section class="">
+
+
+
+
+    <!-- <section class="">
       <div class="container mx-4 md:mx-auto flex text-secondary">
         <div class="md:pt-32 lg:pt-40 pr-2 basis-1/2">
           <div class="flex relative">
@@ -98,6 +171,6 @@ import { RouterLink, RouterView } from "vue-router";
         <p class="py-3 pr-8">Magna sunt aute nisi amet veniam laboris. Dolor ut do consequat non aliqua id adipisicing pariatur in in eiusmod elit. Ullamco sint eiusmod anim veniam sint. Culpa elit ullamco ullamco esse minim ut dolor.</p>
         <p class="py-3 pr-8">Exercitation occaecat adipisicing consectetur aliqua culpa ea cillum tempor qui ea reprehenderit proident eu. Ex nostrud reprehenderit qui magna commodo proident cupidatat dolor id officia cillum laboris consectetur ullamco anim.</p>
       </div>
-    </section>
+    </section> -->
   </main>
 </template>

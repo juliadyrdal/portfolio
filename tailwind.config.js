@@ -13,8 +13,11 @@ module.exports = {
       surface: {
         primary: '#CFE1E2',
         secondary: '#CFD5E2',
+        light: '#F9F2EF',
       },
       black: '#2A3843',
+      gray: '#7B9496',
+      graydark: '#6F787E',
       primary: {
         lighter: '#F4F6F8',
         light: '#CFE1E2',
