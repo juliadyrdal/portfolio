@@ -6,6 +6,15 @@ module.exports = {
   ],
   theme: {
     colors: {
+      font: {
+        primary: '#2D6E72',
+        secondary: '#364870',
+      },
+      surface: {
+        primary: '#CFE1E2',
+        secondary: '#CFD5E2',
+      },
+      black: '#2A3843',
       primary: {
         lighter: '#F4F6F8',
         light: '#CFE1E2',
@@ -19,7 +28,7 @@ module.exports = {
       drops: '#0087B1',
     },
     fontFamily: {
-      sans: ['Roboto', 'sans-serif'],
+      sans: ['Inter', 'sans-serif'],
       serif: ['utile-display', 'serif'],
     },
     extend: {},

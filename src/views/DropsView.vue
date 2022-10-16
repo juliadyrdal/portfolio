@@ -4,7 +4,37 @@ import { RouterLink, RouterView } from "vue-router";
 </script>
 
 <template>
-  <main>
+  <main class="text-black font-sans">
+  <section class="container mx-auto">
+    <div class="mt-20 flex items-center">
+    <div class="basis-1/2">
+      <h1 class="py-4 text-8xl font-medium">Drops</h1>
+      <p class="pt-8 pb-16 leading-8">Magna sunt aute nisi amet veniam laboris. Dolor ut do consequat non aliqua id adipisicing pariatur in in eiusmod elit. Ullamco sint eiusmod anim veniam sint. Culpa elit ullamco ullamco esse minim ut dolor.</p>
+    </div>
+    <div>
+      <img src="../assets/drops-hero-image.png" class="pl-8 basis-1/2 w-5/6" />
+    </div>
+    </div>
+    <div class="pb-4 border border-t-0 border-l-0 border-r-0">
+      <p class="py-2 font-semibold"><a href="#" class="pr-2 hover:underline">Process</a> | <a href="#" class="px-2 hover:underline">Solution</a> | <a href="#" class="pl-2 hover:underline">Prototype</a></p>
+    </div>
+  </section>
+  <section class="container mx-auto my-32">
+    <p class="py-2 text-lg text-font-primary font-medium">Global Issues</p>
+        <h2 class="py-3 text-black text-6xl font-medium">Local solutions</h2>
+        <p class="py-2 text-sm text-font-secondary uppercase text-font-primary">A user experience design course assignment</p>
+    <article class="mt-12 flex items-center bg-surface-primary">
+      <img src="../assets/drops-thumbnail.png" alt="" class="w-3/6">
+      <div class="mx-16 pr-12">
+        <p class="py-4 leading-7">Magna sunt aute nisi amet veniam laboris. Dolor ut do consequat non aliqua id adipisicing pariatur in in eiusmod elit. Ullamco sint eiusmod anim veniam sint. Culpa elit ullamco ullamco esse minim ut dolor.</p>
+        <p class="py-4 leading-7">Elit exercitation occaecat adipisicing consectetur aliqua culpa ea cillum tempor qui ea reprehenderit proident eu. Ex nostrud reprehenderit qui magna commodo proident cupidatat dolor id officia cillum laboris consectetur ullamco anim.</p>
+      </div>
+    </article>
+  </section>
+
+
+
+
     <section class="">
       <div class="container mx-4 md:mx-auto flex text-secondary">
         <div class="md:pt-32 lg:pt-40 pr-2 basis-1/2">

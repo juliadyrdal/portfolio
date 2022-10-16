@@ -11,9 +11,9 @@ const route = useRoute();
     <nav class="flex justify-between">
       <RouterLink to="/" class="">Julia Dyrdal</RouterLink>
       <span class="">
-        <RouterLink to="/projects" class="hover:underline decoration-primary-medium">Projects</RouterLink>
-        <RouterLink to="/about" class="pl-8 hover:underline decoration-primary-medium">Experience</RouterLink>
-        <a class="pl-8 hover:underline decoration-primary-medium" href="mailto:hello@juliadyrdal.com">hello@juliadyrdal.com</a>
+        <RouterLink to="/projects" class="hover:underline underline-offset-2 decoration-2 decoration-primary-medium">Projects</RouterLink>
+        <RouterLink to="/about" class="pl-8 hover:underline underline-offset-2 decoration-2 decoration-primary-medium">Experience</RouterLink>
+        <a class="pl-8 hover:underline underline-offset-2 decoration-2 decoration-primary-medium" href="mailto:hello@juliadyrdal.com">hello@juliadyrdal.com</a>
       </span>
     </nav>
   </header>
