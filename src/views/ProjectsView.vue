@@ -15,7 +15,7 @@ import { RouterLink, RouterView } from "vue-router";
       <div class="ml-16">
         <p class="pb-2 text-lg text-font-secondary font-medium">Case Study<span class="px-3">|</span>UX design</p>
         <RouterLink to="/drops"><h2 class="my-7 w-3/4 text-black text-4xl font-medium hover:underline"><span class="font-black">Fjordtours</span> – A new workflow for B2B customers</h2></RouterLink>
-        <p class="text-sm text-font-secondary uppercase">A Student internship</p>
+        <p class="text-sm text-font-secondary uppercase">Student internship</p>
       </div>
     </article>
     <article class="mt-12 flex items-center bg-surface-primary">
@@ -23,7 +23,7 @@ import { RouterLink, RouterView } from "vue-router";
       <div class="ml-16">
         <p class="pb-2 text-lg text-font-primary font-medium">Case Study<span class="px-3">|</span>UX design</p>
         <RouterLink to="/drops"><h2 class="my-7 w-3/4 text-black text-4xl font-medium hover:underline"><span class="font-black">Drops</span> – Save water through awareness and incentives</h2></RouterLink>
-        <p class="text-sm text-font-secondary uppercase text-font-primary">A Student internship</p>
+        <p class="text-sm text-font-secondary uppercase text-font-primary">Course assignment</p>
       </div>
     </article>
   </section>

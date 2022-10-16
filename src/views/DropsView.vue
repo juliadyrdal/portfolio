@@ -100,6 +100,111 @@ import { RouterLink, RouterView } from "vue-router";
         </ul>
       </div>
     </section>
+    <section class="container mx-auto mt-44 mb-24">
+      <div>
+        <h3 class="py-1 text-lg font-medium uppercase">Process and methodology</h3>
+        <h2 class="py-3 text-4xl font-semibold leading-10 w-1/3">How I approached these challenges</h2>
+        <p class="py-2 w-2/5 leading-7"><span class="font-semibold">Magna sunt aute nisi</span> amet veniam laboris. Dolor ut do consequat non aliqua id adipisicing pariatur in in eiusmod elit. Ullamco sint eiusmod anim veniam sint.</p>
+      </div>
+      <div class="flex justify-end -mt-32">
+        <img src="../assets/design-thinking.png" alt="" />
+      </div>
+    </section>
+    <section class="mt-44 mb-24 pb-16 bg-surface-primary">
+      <div class="container mx-auto flex py-12">
+        <div class="basis-1/2">
+          <h3 class="pt-20 text-lg font-medium uppercase">Empathise</h3>
+          <h2 class="py-6 text-4xl font-semibold leading-10 w-1/2">Research and discovery</h2>
+          <p class="pt-24 text-sm leading-6 w-9/12"><span class="font-semibold">Magna sunt aute nisi</span> amet veniam laboris. Dolor ut do consequat non aliqua id adipisicing pariatur in in eiusmod elit. Ullamco sint eiusmod anim veniam sint.</p>
+        </div>
+        <div class="basis-1/2 flex justify-center">
+          <img src="../assets/recycle.svg" alt="" class="w-44" />
+        </div>
+      </div>
+      <div class="ml-20 pb-4 overflow-x-scroll scrollbar">
+        <ul class="my-12 grid grid-flow-col gap-8">
+          <li class="">
+            <article class="w-72">
+              <div class="">
+                <img src="../assets/challenge-1.png" alt="" class="" />
+                <h4 class="pt-8 text-base font-bold">Research goals</h4>
+                <p class="pt-3 text-sm"><span class="font-semibold">Magna sunt aute nisi</span> amet veniam laboris. Dolor ut do consequat non aliqua id adipisicing pariatur in in eiusmod elit. Ullamco sint eiusmod anim veniam sint.</p>
+              </div>
+            </article>
+          </li>
+          <li class="">
+            <article class="w-72">
+              <div class="">
+                <img src="../assets/challenge-1.png" alt="" class="" />
+                <h4 class="pt-8 text-base font-bold">Methods and techniques</h4>
+                <p class="pt-3 text-sm"><span class="font-semibold">Magna sunt aute nisi</span> amet veniam laboris. Dolor ut do consequat non aliqua id adipisicing pariatur in in eiusmod elit. Ullamco sint eiusmod anim veniam sint.</p>
+              </div>
+            </article>
+          </li>
+          <li class="">
+            <article class="w-72">
+              <div class="">
+                <img src="../assets/challenge-1.png" alt="" class="" />
+                <h4 class="pt-8 text-base font-bold">Questions workshop</h4>
+                <p class="pt-3 text-sm"><span class="font-semibold">Magna sunt aute nisi</span> amet veniam laboris. Dolor ut do consequat non aliqua id adipisicing pariatur in in eiusmod elit. Ullamco sint eiusmod anim veniam sint.</p>
+              </div>
+            </article>
+          </li>
+          <li class="">
+            <article class="w-72">
+              <div class="">
+                <img src="../assets/challenge-1.png" alt="" class="" />
+                <h4 class="pt-8 text-base font-bold">Atomic research</h4>
+                <p class="pt-3 text-sm"><span class="font-semibold">Magna sunt aute nisi</span> amet veniam laboris. Dolor ut do consequat non aliqua id adipisicing pariatur in in eiusmod elit. Ullamco sint eiusmod anim veniam sint.</p>
+              </div>
+            </article>
+          </li>
+          <li class="">
+            <article class="w-72">
+              <div class="">
+                <img src="../assets/challenge-1.png" alt="" class="" />
+                <h4 class="pt-8 text-base font-bold">Analysis</h4>
+                <p class="pt-3 text-sm"><span class="font-semibold">Magna sunt aute nisi</span> amet veniam laboris. Dolor ut do consequat non aliqua id adipisicing pariatur in in eiusmod elit. Ullamco sint eiusmod anim veniam sint.</p>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="container mx-auto my-16">
+      <div class="border border-l-0 border-t-0 border-r-0 border-gray">
+        <h3 class="pt-20 text-lg font-medium uppercase">Empathise</h3>
+        <h2 class="py-6 text-4xl font-semibold leading-10 w-1/2">Research findings</h2>
+      </div>
+      <div class="my-8"><a href="#" class="mr-4 px-5 py-2 rounded-full text-white font-medium bg-[#1D3666]">Local</a><a href="#" class="px-5 py-2 rounded-full text-graydark border border-gray">Global</a></div>
+      <div class="mt-16 grid grid-cols-2">
+        <article class="pr-16 py-8 border border-l-0 border-t-0 border-gray">
+          <h4 class="text-4xl font-serif font-medium">1</h4>
+          <p class="py-3 text-xs uppercase">Insight | Local</p>
+          <p class="py-3 text-sm leading-6">People are uncomfortable with the idea that they might waste more water than others, due to their own attitudes towards general wastefulness, and the value they attribute to the opinions of others.</p>
+        </article>
+        <article class="px-16 py-8 border border-l-0 border-t-0 border-r-0 border-gray">
+          <h4 class="text-4xl font-serif font-medium">2</h4>
+          <p class="py-3 text-xs uppercase">Insight | Local</p>
+          <p class="py-3 text-sm leading-6">People change their water consumption habits when they are incentivised through volumetric pricing models, and are able to monitor their usage and compare against a benchmark.</p>
+        </article>
+        <article class="pr-16 py-8 border border-l-0 border-t-0 border-b-0 border-gray">
+          <h4 class="text-4xl font-serif font-medium">3</h4>
+          <p class="py-3 text-xs uppercase">Insight | Local</p>
+          <p class="py-3 text-sm leading-6">People are uncomfortable with the idea that they might waste more water than others, due to their own attitudes towards general wastefulness, and the value they attribute to the opinions of others.</p>
+        </article>
+        <article class="px-16 py-8 border border-l-0 border-t-0 border-r-0 border-gray">
+          <h4 class="text-4xl font-serif font-medium">4</h4>
+          <p class="py-3 text-xs uppercase">Insight | Local</p>
+          <p class="py-3 text-sm leading-6">People change their water consumption habits when they are incentivised through volumetric pricing models, and are able to monitor their usage and compare against a benchmark.</p>
+        </article>
+        <article class="pr-16 py-8 border border-l-0 border-b-0 border-gray">
+          <h4 class="text-4xl font-serif font-medium">5</h4>
+          <p class="py-3 text-xs uppercase">Insight | Local</p>
+          <p class="py-3 text-sm leading-6">People are uncomfortable with the idea that they might waste more water than others, due to their own attitudes towards general wastefulness, and the value they attribute to the opinions of others.</p>
+        </article>
+      </div>
+    </section>
 
 
 
