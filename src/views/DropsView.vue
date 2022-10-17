@@ -1,214 +1,24 @@
 <script setup>
 import { useSanityFetcher } from "vue-sanity";
 import { RouterLink, RouterView } from "vue-router";
+import PageHeader from "../components/project/PageHeader.vue"
+import CaseIntroduction from "../components/project/CaseIntroduction.vue"
+import CaseSummary from "../components/project/CaseSummary.vue"
+import CaseProcess from "../components/project/CaseProcess.vue"
+import ResearchFindings from "../components/project/ResearchFindings.vue"
+import CaseChallenges from "../components/project/CaseChallenges.vue"
+import CaseResearch from "../components/project/CaseResearch.vue"
 </script>
 
 <template>
   <main class="text-black font-sans">
-    <section class="container mx-auto">
-      <div class="mt-24 flex">
-        <div class="basis-1/2">
-          <h1 class="pt-8 text-8xl font-medium">Drops</h1>
-          <p class="pt-10 pb-12 leading-8">Magna sunt aute nisi amet veniam laboris. Dolor ut do consequat non aliqua id adipisicing pariatur in in eiusmod elit. Ullamco sint eiusmod anim veniam sint. Culpa elit ullamco ullamco esse minim ut dolor.</p>
-        </div>
-        <div class="basis-1/2 flex justify-end">
-          <img src="../assets/drops-hero-image.png" class="w-9/12 object-cover" />
-        </div>
-      </div>
-      <div class="pb-4 mt-8 border border-gray border-t-0 border-l-0 border-r-0">
-        <p class="py-2 font-semibold"><span class="pr-2 pb-3">Skip to: </span><a href="#" class="pr-2 underline">Process</a> | <a href="#" class="px-2 underline">Solution</a> | <a href="#" class="pl-2 underline">Prototype</a></p>
-      </div>
-    </section>
-    <section class="container mx-auto my-32">
-      <p class="text-lg text-font-primary font-medium">Global Issues</p>
-      <h2 class="pt-4 pb-4 text-black text-6xl font-medium">Local solutions</h2>
-      <p class="py-3 text-sm text-font-primary font-medium uppercase text-font-primary">A user experience design course assignment</p>
-      <article class="mt-16 flex items-center bg-surface-primary">
-        <img src="../assets/drops-thumbnail.png" alt="" class="w-3/6">
-        <div class="mx-16 pr-12">
-          <p class="py-4 leading-7">Magna sunt aute nisi amet veniam laboris. Dolor ut do consequat non aliqua id adipisicing pariatur in in eiusmod elit. Ullamco sint eiusmod anim veniam sint. Culpa elit ullamco ullamco esse minim ut dolor.</p>
-          <p class="py-4 leading-7">Elit exercitation occaecat adipisicing consectetur aliqua culpa ea cillum tempor qui ea reprehenderit proident eu. Ex nostrud reprehenderit qui magna commodo proident cupidatat dolor id officia cillum laboris consectetur ullamco anim.</p>
-        </div>
-      </article>
-    </section>
-    <section>
-      <div class="container mx-auto pb-12">
-        <h2 class="text-4xl font-semibold">Case summary</h2>
-        <div class="mt-6 pt-6 border border-black border-l-0 border-b-0 border-r-0">
-          <ul class="flex pt-1">
-            <li class="mr-12 flex items-center text-sm"><img src="../assets/icons/academic.svg" alt="icon" class="pr-2 w-6"><span class="pr-1 font-semibold">Project type:</span>course assignment</li>
-            <li class="mr-12 flex items-center text-sm"><img src="../assets/icons/calendar.svg" alt="icon" class="pr-2 w-6"><span class="pr-1 font-semibold">Duration:</span>4 weeks, spring 2022</li>
-            <li class="flex items-center text-sm"><img src="../assets/icons/person.svg" alt="icon" class="pr-2 w-6"><span class="pr-1 font-semibold">Role:</span>solo UX project</li>
-          </ul>
-        </div>
-      </div>
-      <div class="py-16 bg-surface-light">
-        <div class="container mx-auto grid grid-cols-2 gap-32 leading-7">
-          <div>
-            <p class="pb-6"><span class="font-semibold">Magna sunt aute nisi</span> amet veniam laboris. Dolor ut do consequat non aliqua id adipisicing pariatur in in eiusmod elit. Ullamco sint eiusmod anim veniam sint. Culpa elit ullamco ullamco esse minim ut dolor. Elit exercitation occaecat adipisicing consectetur</p>
-            <p><span class="font-semibold">Elit exercitation occaecat</span> adipisicing consectetur aliqua culpa ea cillum tempor qui ea reprehenderit proident eu. Ex nostrud reprehenderit qui magna commodo proident cupidatat dolor id officia cillum laboris consectetur ullamco anim. Magna sunt aute nisi amet veniam laboris. Dolor ut do consequat non aliqua id adipisicing pariatur in in eiusmod elit.</p>
-          </div>
-          <div>
-            <p class="pb-6"><span class="font-semibold">Magna sunt aute nisi</span> amet veniam laboris. Dolor ut do consequat non aliqua id adipisicing pariatur in in eiusmod elit. Ullamco sint eiusmod anim veniam sint. Culpa elit ullamco ullamco esse minim ut dolor.</p>
-            <p><span class="font-semibold">Elit exercitation occaecat adipisicing</span> consectetur aliqua culpa ea cillum tempor qui ea reprehenderit proident eu. Ex nostrud reprehenderit qui magna commodo proident cupidatat dolor id officia cillum laboris consectetur ullamco anim.</p>
-            <div class="grid grid-cols-3 xl:grid-cols-11 mt-12">
-              <a href="#" class="col-start-2 col-span-2 xl:col-start-6 xl:col-span-6 px-6 py-4 bg-white text-sm hover:underline">View Figma prototype<img src="../assets/icons/button-arrow.svg" alt="arrow icon" class="inline pl-4"></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="my-32">
-      <div class="container mx-auto pb-6 border-black border-t-0 border-l-0 border-r-0">
-        <h3 class="py-1 text-lg font-medium uppercase">Challenges</h3>
-        <h2 class="py-2 text-4xl font-semibold leading-10 w-1/3">Changing behaviour through influencing attitudes</h2>
-      </div>
-      <div class="ml-20 overflow-x-scroll scrollbar">
-        <ul class="my-12 grid grid-flow-col gap-10">
-          <li class="">
-            <article class="w-96">
-              <div class="">
-                <img src="../assets/challenge-1.png" alt="" class="" />
-                <p class="pt-6 text-sm"><span class="font-semibold">Magna sunt aute nisi</span> amet veniam laboris. Dolor ut do consequat non aliqua id adipisicing pariatur in in eiusmod elit. Ullamco sint eiusmod anim veniam sint.</p>
-              </div>
-            </article>
-          </li>
-          <li class="">
-            <article class="w-96">
-              <div class="">
-                <img src="../assets/challenge-1.png" alt="" class="" />
-                <p class="pt-6 text-sm"><span class="font-semibold">Magna sunt aute nisi</span> amet veniam laboris. Dolor ut do consequat non aliqua id adipisicing pariatur in in eiusmod elit. Ullamco sint eiusmod anim veniam sint.</p>
-              </div>
-            </article>
-          </li>
-          <li class="">
-            <article class="w-96">
-              <div class="">
-                <img src="../assets/challenge-1.png" alt="" class="" />
-                <p class="pt-6 text-sm"><span class="font-semibold">Magna sunt aute nisi</span> amet veniam laboris. Dolor ut do consequat non aliqua id adipisicing pariatur in in eiusmod elit. Ullamco sint eiusmod anim veniam sint.</p>
-              </div>
-            </article>
-          </li>
-          <li class="">
-            <article class="w-96">
-              <div class="">
-                <img src="../assets/challenge-1.png" alt="" class="" />
-                <p class="pt-6 text-sm"><span class="font-semibold">Magna sunt aute nisi</span> amet veniam laboris. Dolor ut do consequat non aliqua id adipisicing pariatur in in eiusmod elit. Ullamco sint eiusmod anim veniam sint.</p>
-              </div>
-            </article>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="container mx-auto mt-44 mb-24">
-      <div>
-        <h3 class="py-1 text-lg font-medium uppercase">Process and methodology</h3>
-        <h2 class="py-3 text-4xl font-semibold leading-10 w-1/3">How I approached these challenges</h2>
-        <p class="py-2 w-2/5 leading-7"><span class="font-semibold">Magna sunt aute nisi</span> amet veniam laboris. Dolor ut do consequat non aliqua id adipisicing pariatur in in eiusmod elit. Ullamco sint eiusmod anim veniam sint.</p>
-      </div>
-      <div class="flex justify-end -mt-32">
-        <img src="../assets/design-thinking.png" alt="" />
-      </div>
-    </section>
-    <section class="mt-44 mb-24 pb-16 bg-surface-primary">
-      <div class="container mx-auto flex py-12">
-        <div class="basis-1/2">
-          <h3 class="pt-20 text-lg font-medium uppercase">Empathise</h3>
-          <h2 class="py-6 text-4xl font-semibold leading-10 w-1/2">Research and discovery</h2>
-          <p class="pt-24 text-sm leading-6 w-9/12"><span class="font-semibold">Magna sunt aute nisi</span> amet veniam laboris. Dolor ut do consequat non aliqua id adipisicing pariatur in in eiusmod elit. Ullamco sint eiusmod anim veniam sint.</p>
-        </div>
-        <div class="basis-1/2 flex justify-center">
-          <img src="../assets/recycle.svg" alt="" class="w-44" />
-        </div>
-      </div>
-      <div class="ml-20 pb-4 overflow-x-scroll scrollbar">
-        <ul class="my-12 grid grid-flow-col gap-8">
-          <li class="">
-            <article class="w-72">
-              <div class="">
-                <img src="../assets/challenge-1.png" alt="" class="" />
-                <h4 class="pt-8 text-base font-bold">Research goals</h4>
-                <p class="pt-3 text-sm"><span class="font-semibold">Magna sunt aute nisi</span> amet veniam laboris. Dolor ut do consequat non aliqua id adipisicing pariatur in in eiusmod elit. Ullamco sint eiusmod anim veniam sint.</p>
-              </div>
-            </article>
-          </li>
-          <li class="">
-            <article class="w-72">
-              <div class="">
-                <img src="../assets/challenge-1.png" alt="" class="" />
-                <h4 class="pt-8 text-base font-bold">Methods and techniques</h4>
-                <p class="pt-3 text-sm"><span class="font-semibold">Magna sunt aute nisi</span> amet veniam laboris. Dolor ut do consequat non aliqua id adipisicing pariatur in in eiusmod elit. Ullamco sint eiusmod anim veniam sint.</p>
-              </div>
-            </article>
-          </li>
-          <li class="">
-            <article class="w-72">
-              <div class="">
-                <img src="../assets/challenge-1.png" alt="" class="" />
-                <h4 class="pt-8 text-base font-bold">Questions workshop</h4>
-                <p class="pt-3 text-sm"><span class="font-semibold">Magna sunt aute nisi</span> amet veniam laboris. Dolor ut do consequat non aliqua id adipisicing pariatur in in eiusmod elit. Ullamco sint eiusmod anim veniam sint.</p>
-              </div>
-            </article>
-          </li>
-          <li class="">
-            <article class="w-72">
-              <div class="">
-                <img src="../assets/challenge-1.png" alt="" class="" />
-                <h4 class="pt-8 text-base font-bold">Atomic research</h4>
-                <p class="pt-3 text-sm"><span class="font-semibold">Magna sunt aute nisi</span> amet veniam laboris. Dolor ut do consequat non aliqua id adipisicing pariatur in in eiusmod elit. Ullamco sint eiusmod anim veniam sint.</p>
-              </div>
-            </article>
-          </li>
-          <li class="">
-            <article class="w-72">
-              <div class="">
-                <img src="../assets/challenge-1.png" alt="" class="" />
-                <h4 class="pt-8 text-base font-bold">Analysis</h4>
-                <p class="pt-3 text-sm"><span class="font-semibold">Magna sunt aute nisi</span> amet veniam laboris. Dolor ut do consequat non aliqua id adipisicing pariatur in in eiusmod elit. Ullamco sint eiusmod anim veniam sint.</p>
-              </div>
-            </article>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="container mx-auto my-16">
-      <div class="border border-l-0 border-t-0 border-r-0 border-gray">
-        <h3 class="pt-20 text-lg font-medium uppercase">Empathise</h3>
-        <h2 class="py-6 text-4xl font-semibold leading-10 w-1/2">Research findings</h2>
-      </div>
-      <div class="my-8"><a href="#" class="mr-4 px-5 py-2 rounded-full text-white font-medium bg-[#1D3666]">Local</a><a href="#" class="px-5 py-2 rounded-full text-graydark border border-gray">Global</a></div>
-      <div class="mt-16 grid grid-cols-2">
-        <article class="pr-16 py-8 border border-l-0 border-t-0 border-gray">
-          <h4 class="text-4xl font-serif font-medium">1</h4>
-          <p class="py-3 text-xs uppercase">Insight | Local</p>
-          <p class="py-3 text-sm leading-6">People are uncomfortable with the idea that they might waste more water than others, due to their own attitudes towards general wastefulness, and the value they attribute to the opinions of others.</p>
-        </article>
-        <article class="px-16 py-8 border border-l-0 border-t-0 border-r-0 border-gray">
-          <h4 class="text-4xl font-serif font-medium">2</h4>
-          <p class="py-3 text-xs uppercase">Insight | Local</p>
-          <p class="py-3 text-sm leading-6">People change their water consumption habits when they are incentivised through volumetric pricing models, and are able to monitor their usage and compare against a benchmark.</p>
-        </article>
-        <article class="pr-16 py-8 border border-l-0 border-t-0 border-b-0 border-gray">
-          <h4 class="text-4xl font-serif font-medium">3</h4>
-          <p class="py-3 text-xs uppercase">Insight | Local</p>
-          <p class="py-3 text-sm leading-6">People are uncomfortable with the idea that they might waste more water than others, due to their own attitudes towards general wastefulness, and the value they attribute to the opinions of others.</p>
-        </article>
-        <article class="px-16 py-8 border border-l-0 border-t-0 border-r-0 border-gray">
-          <h4 class="text-4xl font-serif font-medium">4</h4>
-          <p class="py-3 text-xs uppercase">Insight | Local</p>
-          <p class="py-3 text-sm leading-6">People change their water consumption habits when they are incentivised through volumetric pricing models, and are able to monitor their usage and compare against a benchmark.</p>
-        </article>
-        <article class="pr-16 py-8 border border-l-0 border-b-0 border-gray">
-          <h4 class="text-4xl font-serif font-medium">5</h4>
-          <p class="py-3 text-xs uppercase">Insight | Local</p>
-          <p class="py-3 text-sm leading-6">People are uncomfortable with the idea that they might waste more water than others, due to their own attitudes towards general wastefulness, and the value they attribute to the opinions of others.</p>
-        </article>
-      </div>
-    </section>
-
-
-
-
+    <PageHeader title="Drops" paragraph="Magna sunt aute nisi amet veniam laboris. Dolor ut do consequat non aliqua id adipisicing pariatur in in eiusmod elit. Ullamco sint eiusmod anim veniam sint. Culpa elit ullamco ullamco esse minim ut dolor." />
+    <CaseIntroduction titleHeading="Global Issues" heading="Local solutions" subHeading="A user experience design course assignment" paragraphOne="Magna sunt aute nisi amet veniam laboris. Dolor ut do consequat non aliqua id adipisicing pariatur in in eiusmod elit. Ullamco sint eiusmod anim veniam sint. Culpa elit ullamco ullamco esse minim ut dolor." paragraphTwo="Elit exercitation occaecat adipisicing consectetur aliqua culpa ea cillum tempor qui ea reprehenderit proident eu. Ex nostrud reprehenderit qui magna commodo proident cupidatat dolor id officia cillum laboris consectetur ullamco anim." />
+    <CaseSummary projectType="course assignment" duration="4 weeks, spring 2022" role="solo UX project" />
+    <CaseChallenges />
+    <CaseProcess id="process" />
+    <CaseResearch />
+    <ResearchFindings />
 
 
 
