@@ -14,7 +14,7 @@ import { RouterLink, RouterView } from "vue-router";
       <img src="../assets/fjordtours-thumbnail.png" alt="" class="w-2/6">
       <div class="ml-16">
         <p class="pb-2 text-lg text-font-secondary font-medium">Case Study<span class="px-3">|</span>UX design</p>
-        <RouterLink to="/drops"><h2 class="my-7 w-3/4 text-black text-4xl font-medium hover:underline"><span class="font-black">Fjordtours</span> – A new workflow for B2B customers</h2></RouterLink>
+        <RouterLink to="/fjordtours"><h2 class="my-7 w-3/4 text-black text-4xl font-medium hover:underline"><span class="font-black">Fjordtours</span> – A new workflow for B2B customers</h2></RouterLink>
         <p class="text-sm text-font-secondary uppercase">Student internship</p>
       </div>
     </article>

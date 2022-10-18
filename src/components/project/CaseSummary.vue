@@ -4,7 +4,8 @@ import { RouterLink, RouterView } from "vue-router";
 const props = defineProps({
   projectType: String,
   duration: String,
-  role: String
+  role: String,
+  prototypeLink: String,
 })
 </script>
 
@@ -30,7 +31,7 @@ const props = defineProps({
             <p class="pb-6"><span class="font-semibold">Magna sunt aute nisi</span> amet veniam laboris. Dolor ut do consequat non aliqua id adipisicing pariatur in in eiusmod elit. Ullamco sint eiusmod anim veniam sint. Culpa elit ullamco ullamco esse minim ut dolor.</p>
             <p><span class="font-semibold">Elit exercitation occaecat adipisicing</span> consectetur aliqua culpa ea cillum tempor qui ea reprehenderit proident eu. Ex nostrud reprehenderit qui magna commodo proident cupidatat dolor id officia cillum laboris consectetur ullamco anim.</p>
             <div class="grid grid-cols-3 xl:grid-cols-11 mt-12">
-              <a href="#" class="col-start-2 col-span-2 xl:col-start-6 xl:col-span-6 px-6 py-4 bg-white text-sm hover:underline">View Figma prototype<img src="../../assets/icons/button-arrow.svg" alt="arrow icon" class="inline pl-4"></a>
+              <a target="_blank" :href="prototypeLink" class="col-start-2 col-span-2 xl:col-start-6 xl:col-span-6 px-6 py-4 bg-white text-sm hover:underline">View Figma prototype<img src="../../assets/icons/button-arrow.svg" alt="arrow icon" class="inline pl-4"></a>
             </div>
           </div>
         </div>

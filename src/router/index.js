@@ -27,6 +27,11 @@ const router = createRouter({
       name: "drops",
       component: () => import("../views/DropsView.vue"),
     },
+    {
+      path: "/fjordtours",
+      name: "fjordtours",
+      component: () => import("../views/FjordView.vue"),
+    },
   ],
   scrollBehavior (to, from, savedPosition) {
     if (to.hash) {
