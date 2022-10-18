@@ -23,17 +23,17 @@ import { RouterLink, RouterView } from "vue-router";
         <article class="pr-16 py-8 border border-l-0 border-t-0 border-b-0 border-gray">
           <h4 class="text-4xl font-serif font-medium">3</h4>
           <p class="py-3 text-xs uppercase">Insight | Local</p>
-          <p class="py-3 text-sm leading-6">People are uncomfortable with the idea that they might waste more water than others, due to their own attitudes towards general wastefulness, and the value they attribute to the opinions of others.</p>
+          <p class="py-3 text-sm leading-6">People have very little awareness of their own water consumption, because there are no visual cues or guidance, causing them to have no sense of relative proportion.</p>
         </article>
         <article class="px-16 py-8 border border-l-0 border-t-0 border-r-0 border-gray">
           <h4 class="text-4xl font-serif font-medium">4</h4>
           <p class="py-3 text-xs uppercase">Insight | Local</p>
-          <p class="py-3 text-sm leading-6">People change their water consumption habits when they are incentivised through volumetric pricing models, and are able to monitor their usage and compare against a benchmark.</p>
+          <p class="py-3 text-sm leading-6">People do not frame water treatment and disposal as a potential reason to conserve water, because they have a low awareness of these processes and their environmental costs.</p>
         </article>
         <article class="pr-16 py-8 border border-l-0 border-b-0 border-gray">
           <h4 class="text-4xl font-serif font-medium">5</h4>
           <p class="py-3 text-xs uppercase">Insight | Local</p>
-          <p class="py-3 text-sm leading-6">People are uncomfortable with the idea that they might waste more water than others, due to their own attitudes towards general wastefulness, and the value they attribute to the opinions of others.</p>
+          <p class="py-3 text-sm leading-6">Despite awareness of general conservation methods, water intensive activities, and a general motivation to decrease their environmental impact, people still waste water, because their belief that there are no water shortage issues in Norway leads them to assume it’s pointless.</p>
         </article>
       </div>
     </section>
