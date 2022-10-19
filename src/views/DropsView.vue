@@ -12,10 +12,10 @@ import CaseResearch from "../components/project/CaseResearch.vue"
 import SliderSection from "../components/SliderSection.vue"
 
 import imageUrl from '@/assets/drops-thumbnail.png'
-import personaImage from '@/assets/drops-thumbnail.png'
-import scenarioImage from '@/assets/drops-thumbnail.png'
-import problemImage from '@/assets/drops-thumbnail.png'
-import ideationImage from '@/assets/drops-thumbnail.png'
+import personaImage from '@/assets/persona.png'
+import scenarioImage from '@/assets/scenario.png'
+import problemImage from '@/assets/problem.png'
+import ideationImage from '@/assets/ideation.png'
 
 const defineItems = reactive([
   {
@@ -87,7 +87,7 @@ Because Norwegians think about water as an inexhaustable, renewable resource, th
     <CaseProcess id="process" />
     <CaseResearch introduction="Magna sunt aute nisi amet veniam laboris. Dolor ut do consequat non aliqua id adipisicing pariatur in in eiusmod elit. Ullamco sint eiusmod anim veniam sint." goals="To discover the target users’ awareness, attitudes and behaviour related to freshwater conservation and consumption on an individual, local and global scale." methods="I used the secondary research method literature review, to get more domain knowledge and to understand the technical challenges. As a primary research methods I interviewed potential users in the target group." questions="" atomic="I have used the atomic research model to organise research data, including facts, themes and insights. This will be useful for Fjordtours in their continued research, to strengthen insights, use established facts in new insights, and to share knowledge between departments." analysis="To analyse the research data from both primary and secondary research, I used affinity mapping to sort facts and discover patterns and themes. " />
     <ResearchFindingsTabs />
-    <SliderSection titleHeading="Define and ideate" heading="Finding the solution" sliderSectionClass="bg-primary-light">
+    <SliderSection titleHeading="Define and ideate" heading="Finding the solution" sliderSectionClass="bg-white">
       <li v-for="item in defineItems" :key="item.heading">
         <article class="w-96">
           <div class="">
