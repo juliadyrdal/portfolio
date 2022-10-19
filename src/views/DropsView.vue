@@ -11,7 +11,7 @@ import CaseChallenges from "../components/project/CaseChallenges.vue"
 import CaseResearch from "../components/project/CaseResearch.vue"
 import SliderSection from "../components/SliderSection.vue"
 
-import imageUrl from '@/assets/drops-thumbnail.png'
+import headerImage from '@/assets/drops-hero-image.png'
 import personaImage from '@/assets/persona.png'
 import scenarioImage from '@/assets/scenario.png'
 import problemImage from '@/assets/problem.png'
@@ -71,7 +71,7 @@ const researchItems = reactive([
 
 <template>
   <main class="text-black font-sans">
-    <PageHeader title="Drops" paragraph="The world’s freshwater is a finite, scarce and unequally distributed resource. Global water shortage areas are affected by climate change, and also the mismanagement of water resources due to the prioritisation given to water intensive industry and agriculture, often using less efficient irrigation methods. One example is the avocados grown in a region of Chile, using ten times as much water as average avocado, while the local population lack enough water to cover their basic needs." :imageSrc="imageUrl" imageClass="object-cover" />
+    <PageHeader title="Drops" paragraph="The world’s freshwater is a finite, scarce and unequally distributed resource. Global water shortage areas are affected by climate change, and also the mismanagement of water resources due to the prioritisation given to water intensive industry and agriculture, often using less efficient irrigation methods. One example is the avocados grown in a region of Chile, using ten times as much water as average avocado, while the local population lack enough water to cover their basic needs." :imageSrc="headerImagegit" imageClass="object-cover" />
     <CaseIntroduction titleHeading="Global Issues" heading="Local solutions" subHeading="A user experience design course assignment" paragraphOne="" paragraphTwo="Because of the visible abundance of water, Norwegians don’t consider their own consumption of water - it’s always available, on demand, like breathing air.
 In addition to being so ubiquitous, water is very cheap and the overwhelming majority pay a flat rate, no matter how much water they use.
 Because Norwegians think about water as an inexhaustable, renewable resource, they are not aware of the environmental cost and carbon footprint of their own direct water consumption. These factors might be contributing to the fact that Norwegians on average consume 180 litres of tap water each day, a record in the Nordics, and twice as much as our Danish neighbours." />
