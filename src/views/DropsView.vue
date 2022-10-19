@@ -112,7 +112,7 @@ Because Norwegians think about water as an inexhaustable, renewable resource, th
       </template>
     </CaseSummary>
     <CaseProcess id="process" />
-    <SliderSection titleHeading="Empathise" heading="Research and discovery" introduction="git a" sliderSectionClass="bg-primary-light">
+    <SliderSection titleHeading="Empathise" heading="Research and discovery" introduction="" sliderSectionClass="bg-primary-light">
       <li v-for="item in researchItems" :key="item.heading">
         <article class="w-96">
           <div class="">
