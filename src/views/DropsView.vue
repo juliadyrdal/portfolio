@@ -16,6 +16,10 @@ import personaImage from '@/assets/persona.png'
 import scenarioImage from '@/assets/scenario.png'
 import problemImage from '@/assets/problem.png'
 import ideationImage from '@/assets/ideation.png'
+import goalsImage from '@/assets/goals.png'
+import methodsImage from '@/assets/methods.png'
+import analysisImage from '@/assets/analysis.png'
+
 
 const defineItems = reactive([
   {
@@ -37,6 +41,29 @@ const defineItems = reactive([
     imageSrc: ideationImage,
     heading: 'Ideation workshop',
     body: 'I have chosen to use the mind mapping and the brainstorming ideation techniques, as these are more suitable for conducting a solo workshop. I will set a timer for each ideation exercise, to apply some time pressure, which will help to focus on quantity over quality to encourage creativity. Before starting, I’ll read through notes from the secondary research, the problem statement, vision statement, insights, my study notes on Norman’s three levels of design and the persona...'
+  },
+])
+
+const researchItems = reactive([
+  {
+    imageSrc: goalsImage,
+    heading: 'Research goals',
+    body: 'To discover the target users’ awareness, attitudes and behaviour related to freshwater conservation and consumption on an individual, local and global scale.'
+  },
+  {
+    imageSrc: methodsImage,
+    heading: 'Methods and techniques',
+    body: 'I used the secondary research method literature review, to get more domain knowledge and to understand the technical challenges. As a primary research methods I interviewed potential users in the target group.'
+  },
+  {
+    imageSrc: problemImage,
+    heading: 'Atomic research',
+    body: 'I have used the atomic research model to organise research data, including facts, themes and insights. This will be useful for Fjordtours in their continued research, to strengthen insights, use established facts in new insights, and to share knowledge between departments.'
+  },
+  {
+    imageSrc: analysisImage,
+    heading: 'Analysis',
+    body: 'To analyse the research data from both primary and secondary research, I used affinity mapping to sort facts and discover patterns and themes.'
   },
 ])
 
@@ -85,7 +112,17 @@ Because Norwegians think about water as an inexhaustable, renewable resource, th
       </template>
     </CaseSummary>
     <CaseProcess id="process" />
-    <CaseResearch introduction="Magna sunt aute nisi amet veniam laboris. Dolor ut do consequat non aliqua id adipisicing pariatur in in eiusmod elit. Ullamco sint eiusmod anim veniam sint." goals="To discover the target users’ awareness, attitudes and behaviour related to freshwater conservation and consumption on an individual, local and global scale." methods="I used the secondary research method literature review, to get more domain knowledge and to understand the technical challenges. As a primary research methods I interviewed potential users in the target group." questions="" atomic="I have used the atomic research model to organise research data, including facts, themes and insights. This will be useful for Fjordtours in their continued research, to strengthen insights, use established facts in new insights, and to share knowledge between departments." analysis="To analyse the research data from both primary and secondary research, I used affinity mapping to sort facts and discover patterns and themes. " />
+    <SliderSection titleHeading="Empathise" heading="Research and discovery" introduction="git a" sliderSectionClass="bg-primary-light">
+      <li v-for="item in researchItems" :key="item.heading">
+        <article class="w-96">
+          <div class="">
+            <img :src="item.imageSrc" alt="" class="" />
+            <h4 class="pt-8 text-base font-bold">{{ item.heading }}</h4>
+            <p class="pt-3 text-sm">{{ item.body }}</p>
+          </div>
+        </article>
+      </li>
+    </SliderSection>
     <ResearchFindingsTabs />
     <SliderSection titleHeading="Define and ideate" heading="Finding the solution" sliderSectionClass="bg-white">
       <li v-for="item in defineItems" :key="item.heading">
