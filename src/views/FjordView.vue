@@ -59,28 +59,43 @@ const researchItems = reactive([
 <template>
   <main class="text-black font-sans">
     <PageHeader title="Fjordtours" paragraph="Fjordtours is an inbound tour operator based in Bergen, Norway. They aim to give travellers the quintessential local experience, conceptualised through their branded ‘In a Nutshell Tours’, offered both to travel agents and direct to consumers. In a Nutshell Tours combines transport, such as ferries and trains, with local activities en route, including apple cider tasting and kayaking in UNESCO listed landscape. Fjordtours’ flagship product, ‘Norway in a Nutshell’ which includes the spectacular Flåm railway journey, is Norways most popular roundtrip." :imageSrc="imageUrl" />
-    <SliderSection titleHeading="The Catalyst" heading="What's changed?" introduction="" sliderSectionClass="bg-primary-light" introImageSrc="" imageContainerClass="basis-1/2 flex justify-end" imageClass="w-72">
-      <template #introduction>
-        <img src="../assets/fjordtours-lake-narrow.png" alt="" class="h-72">
-      </template>
-      <li v-for="item in changeItems" :key="item.heading">
-        <article class="w-96">
-          <div class="">
-            <h4 class="pt-8 text-base font-bold">{{ item.heading }}</h4>
-            <p class="pt-3 text-sm">{{ item.body }}</p>
+    <section class="container mx-auto my-20">
+      <div class="basis-1/2">
+        <h3 class="pt-20 text-lg font-medium uppercase">The catalyst</h3>
+        <h2 class="py-10 text-7xl font-semibold leading-10 w-1/4">
+          Changes
+        </h2>
+      </div>
+      <div class="mt-12 grid grid-cols-3">
+        <div class="pr-2">
+          <img src="../assets/floyen.png" class="" />
+          <div class="bg-primary-light">
+            <p class="px-6 pt-10 text-xl font-regular leading-full">All these changes represent new opportunities for Fjordtours.</p>
+            <p class="py-10 pt-6 px-6 text-sm font-semibold uppercase">So what's the problem?</p>
           </div>
-        </article>
-      </li>
-      <template #emphasized>
-        <p class="pt-32 pb-16 text-3xl font-semibold w-1/2"><span class="font-normal">All these changes represent new opportunities for Fjordtours.</span><br /> So what’s the problem?</p> 
-      </template>
-    </SliderSection>
+        </div>
+        <div class="pl-16 mt-10 w-10/12 col-span-2">
+          <div class="pb-8">
+            <h4 class="text-sm pb-2 font-semibold">Increased focus on B2B sales</h4>
+            <p class="text-sm">Going forward, B2B sales will be a prioritised channel for Fjordtours. This represents an opportunity to reach tour operators directly, skipping incoming tour operators. As well as increased margins, these tour operators work with many different destinations and products, and do therefore not have the specialised knowledge required to deal with suppliers directly. This makes tour operators an attractive target customer for Fjordtours.</p>
+          </div>
+          <div class="mt-8 pb-8">
+            <h4 class="text-sm pb-2 font-semibold">Exclusive pre-seller of VY train tickets</h4>
+            <p class="text-sm">Fjordtours has become the only advance seller of VY transport tickets, until 90 days prior to departure. Tour operators booking group travel, such as cruise agents, rely on advance transport booking to do their jobs.</p>
+          </div>
+          <div class="mt-8 pb-8">
+            <h4 class="text-sm pb-2 font-semibold">Unprecedented high employee turnover in the travel industry</h4>
+            <p class="text-sm">Due to the global pandemic halting international travel, the industry has seen a high employee turnover, as tour operators have had to recruit inexperienced candidates. As a consequence, a high number of agents (users) lack the skill and experience which have normally been assumed.</p>
+          </div>
+        </div>
+      </div>
+    </section>
     <CaseProcess />
     <SliderSection titleHeading="Empathise" heading="Research and discovery" introduction="" sliderSectionClass="" introImageSrc="" imageContainerClass="basis-1/2 flex justify-center" imageClass="w-44">
       <template #introduction>
         <div class="py-6 w-5/6 grid grid-cols-2 gap-20">
-          <p class=" text-sm leading-6">Fjordtours’ B2B portal is situated within a complex ecosystem of products, suppliers, different types of clients, travellers, processes and business logic. A good understanding of this ecosystem is a prerequisite for even attempting to empathise with and understand users’ everyday pain points and problems.</p>
-          <p class=" text-sm leading-6">Aquirering this level of expertise is best achieved by a mixture of primary and secondary research, starting with a literature review to prepare for stakeholder interviews, industry expert interview, competitive analysis, and a contextual inquiry.</p>
+          <p class="leading-7">Fjordtours’ B2B portal is situated within a complex ecosystem of products, suppliers, different types of clients, travellers, processes and business logic. A good understanding of this ecosystem is a prerequisite for even attempting to empathise with and understand users’ everyday pain points and problems.</p>
+          <p class="leading-7">Aquirering this level of expertise is best achieved by a mixture of primary and secondary research, starting with a literature review to prepare for stakeholder interviews, industry expert interview, competitive analysis, and a contextual inquiry.</p>
         </div>
         <div class="mt-20 mb-6 py-12 bg-[#F9F2EF]">
           <div class="w-11/12 flex flex-col justify-center content-center mx-auto">
@@ -110,6 +125,24 @@ const researchItems = reactive([
       </li>
     </SliderSection>
     <ResearchFindings />
+    <section class="my-32">
+      <div class="container mx-auto basis-1/2">
+        <h3 class="pt-20 text-lg font-medium uppercase">Defining the problem</h3>
+        <h2 class="py-6 text-4xl font-semibold leading-10 w-1/4">
+          A way forward
+        </h2>
+      </div>
+      <div class="mt-6 flex">
+        <img src="../assets/puzzle.png" />
+        <div class="px-16 2xl:px-24 bg-primary-light flex flex-col items-center content-center justify-center">
+          <div>
+             <p class="text-lg font-semibold uppercase">Problem statement</p>
+             <p class="py-4 text-lg 2xl:w-10/12">Fjordtours’ two most valued B2B users groups have conflicting needs, goals and mental models when using the interface. Combined with a poor match between the interface and user expectations, this leads to missed opportunities for both users and Fjordtours. How can we create a conceptual model that supports both user groups in their daily workflows?</p>
+          </div>
+        </div>
+      </div>
+      <div class="container mx-auto"><p class="pt-6 text-sm uppercase text-gray">Piecing together the puzzle with no reference</p></div>
+    </section>
     <section class="">
       <div class="container mx-auto">
         <div class="basis-1/2">

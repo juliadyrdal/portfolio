@@ -13,7 +13,7 @@ const props = defineProps({
 </script>
 
 <template>
-	<section class="mt-44 mb-24 pb-16 bg-surface-primary">
+	<section class="mt-20 mb-24 pb-16 bg-surface-primary">
       <div class="container mx-auto flex py-12">
         <div class="basis-1/2">
           <h3 class="pt-20 text-lg font-medium uppercase">Empathise</h3>

@@ -13,7 +13,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <section class="mt-44 mb-24 pb-16" :class="sliderSectionClass">
+  <section class="mb-24 pb-16" :class="sliderSectionClass">
     <div class="container mx-auto flex py-12">
       <div class="basis-1/2">
         <h3 class="pt-20 text-lg font-medium uppercase">{{ titleHeading }}</h3>
@@ -26,7 +26,7 @@ const props = defineProps({
       </div>
     </div>
     <div class="container mx-auto"><slot name="introduction"></slot></div>
-    <div class="ml-20 pb-4 overflow-x-scroll scrollbar">
+    <div class="ml-20 2xl:ml-44 pb-4 overflow-x-scroll scrollbar">
       <ul class="my-12 grid grid-flow-col gap-8">
         <slot></slot>
       </ul>
