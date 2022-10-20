@@ -78,19 +78,26 @@ const researchItems = reactive([
     <CaseProcess />
     <SliderSection titleHeading="Empathise" heading="Research and discovery" introduction="" sliderSectionClass="" introImageSrc="" imageContainerClass="basis-1/2 flex justify-center" imageClass="w-44">
       <template #introduction>
-        <div class="pt-6 grid grid-cols-2 gap-20">
+        <div class="py-6 w-5/6 grid grid-cols-2 gap-20">
           <p class=" text-sm leading-6">Fjordtours’ B2B portal is situated within a complex ecosystem of products, suppliers, different types of clients, travellers, processes and business logic. A good understanding of this ecosystem is a prerequisite for even attempting to empathise with and understand users’ everyday pain points and problems.</p>
           <p class=" text-sm leading-6">Aquirering this level of expertise is best achieved by a mixture of primary and secondary research, starting with a literature review to prepare for stakeholder interviews, industry expert interview, competitive analysis, and a contextual inquiry.</p>
         </div>
-        <img src="../assets/fjordtours-fjord-narrow.png" alt="" class="mt-16" />
-        <h3 class="pt-32 text-2xl pb-4 font-semibold leading-6 w-9/12">Research objectives</h3>
-        <div class="grid grid-cols-2 gap-0 w-5/6">
-          <p class="py-4 text-sm leading-6 w-9/12">Understand the ecosystem, including different roles, products and processes, in which Fjordtours B2B operate.</p>
-          <p class="py-4 text-sm leading-6 w-9/12">Understand Fjordtours’ strategic goals, business logic (within the scope), and limitations.</p>
-          <p class="py-4 text-sm leading-6 w-9/12">Understand the user’s mental model and mindset when interfacing with Fjordtour’s B2B booking platform.</p>
-          <p class="py-4 text-sm leading-6 w-9/12">Understand and empathise with the user’s problems and pain points through the entire journey of deciding to, order, and followow up, a booking through Fjordtours.</p>
-          <h3 class="pt-12 text-2xl font-semibold">Research methods</h3>
+        <div class="mt-20 mb-6 py-12 bg-[#F9F2EF]">
+          <div class="w-11/12 flex flex-col justify-center content-center mx-auto">
+            <h3 class="pt-2 pb-10 text-xl pb-4 font-semibold leading-6">Research objectives</h3>
+            <div class="flex">
+              <div class="mr-24 basis-1/2">
+                <p class="py-4 pb-12 text-sm leading-6"><span class="font-semibold">Understand the ecosystem</span>, including different roles, products and processes, in which Fjordtours B2B operate.</p>
+                <p class="py-4 text-sm leading-6"><span class="font-semibold">Understand Fjordtours’ strategic goals</span>, business logic (within the scope), and limitations.</p>
+              </div>
+              <div class="basis-1/2">
+                <p class="py-4 pb-12 text-sm leading-6"><span class="font-semibold">Understand the user’s mental model</span> and mindset when interfacing with Fjordtour’s B2B booking platform.</p>
+                <p class="py-4 text-sm leading-6"><span class="font-semibold">Understand and empathise with the user’s problems</span> and pain points through the entire journey of deciding to, order, and followow up, a booking through Fjordtours.</p>
+              </div>
+            </div>
+          </div>
         </div>
+        <h3 class="pt-12 text-xl font-semibold">Research methods</h3>
       </template>
       <li v-for="item in researchItems" :key="item.heading">
         <article class="w-96">
