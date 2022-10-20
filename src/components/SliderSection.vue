@@ -5,9 +5,10 @@ import { defineProps, ref } from "vue";
 const props = defineProps({
   titleHeading: String,
   heading: String,
-  introduction: String,
   introImageSrc: String,
   sliderSectionClass: String,
+  imageContainerClass: String,
+  imageClass: String,
 });
 </script>
 
@@ -19,16 +20,19 @@ const props = defineProps({
         <h2 class="py-6 text-4xl font-semibold leading-10 w-1/2">
           {{ heading }}
         </h2>
-        <p class="pt-24 text-sm leading-6 w-9/12">{{ introduction }}</p>
       </div>
-      <div class="basis-1/2 flex justify-center">
-        <img src="../assets/recycle.svg" alt="" class="w-44" />
+      <div class="" :class="imageContainerClass">
+        <img :src="introImageSrc" alt="" class="" :class="imageClass" />
       </div>
     </div>
+    <div class="container mx-auto"><slot name="introduction"></slot></div>
     <div class="ml-20 pb-4 overflow-x-scroll scrollbar">
       <ul class="my-12 grid grid-flow-col gap-8">
         <slot></slot>
       </ul>
+    </div>
+    <div class="container mx-auto">
+      <slot name="emphasized"></slot>
     </div>
   </section>
 </template>
