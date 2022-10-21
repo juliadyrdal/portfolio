@@ -120,6 +120,7 @@ Because Norwegians think about water as an inexhaustable, renewable resource, th
             <img :src="item.imageSrc" alt="" class="" />
             <h4 class="pt-8 text-base font-bold">{{ item.heading }}</h4>
             <p class="pt-3 text-sm">{{ item.body }}</p>
+            <a>Read more</a>
           </div>
         </article>
       </li>
