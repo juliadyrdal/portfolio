@@ -15,12 +15,6 @@ export default {
     },
     components: { TheHeader }
 }
-
-// Vue.use(VueFathom, {
-//   siteID: 'RHZAHMLK',
-//   disabled: false,
-//   settings: { ... },
-// });
 </script>
 
 <template>
@@ -31,7 +25,3 @@ export default {
 
 <style scoped>
 </style>
-
-// <!-- Fathom - beautiful, simple website analytics -->
-<!-- <script src="https://cdn.usefathom.com/script.js" data-spa="auto" data-site="RHZAHMLK" defer></script> -->
-// <!-- / Fathom -->
