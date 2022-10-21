@@ -60,7 +60,7 @@ const refineItems = reactive([
     imageSrc: goalsImage,
     heading: 'Conceptual and mental model',
     body: 'When an agent comes to the Fjordtours B2B portal to complete a task in their work flow, they have to translate what it is that they want to do, into the operations provided by the tool. This translation requires more cognitive effort if the operations offered maps poorly onto the users’ goal (referred to by cognitive...',
-    link: '/drops/persona',
+    link: 'fjordtours/conceptual-model',
   },
   {
     imageSrc: methodsImage,

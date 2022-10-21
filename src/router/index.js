@@ -47,6 +47,11 @@ const router = createRouter({
       name: "fjordtours",
       component: () => import("../views/FjordView.vue"),
     },
+    {
+      path: "/fjordtours/conceptual-model",
+      name: "fjordtours-conceptual-model",
+      component: () => import("../views/FjordConceptualModelView.vue"),
+    },
   ],
   scrollBehavior (to, from, savedPosition) {
     if (to.hash) {
