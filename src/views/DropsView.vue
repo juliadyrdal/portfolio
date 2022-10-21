@@ -26,22 +26,26 @@ const defineItems = reactive([
   {
     imageSrc: personaImage,
     heading: 'Persona',
-    body: 'I have created the primary persona ‘Naomi Jacobsen’, by synthesising behaviours, motivations and attitudes from the actual target users who were part of the primary research, supplemented with reliable secondary data about millennials and their attitudes towards environmental issues and their awareness of their own water consumption, into a composite archetype. This qualitative model is personified, to elicit empathy...'
+    body: 'I have created the primary persona ‘Naomi Jacobsen’, by synthesising behaviours, motivations and attitudes from the actual target users who were part of the primary research, supplemented with reliable secondary data about millennials and their attitudes towards environmental issues and their awareness of their own water consumption, into a composite archetype. This qualitative model is personified, to elicit empathy...',
+    link: '/drops/persona'
   },
   {
     imageSrc: scenarioImage,
     heading: 'Context scenario',
-    body: 'Naomi wants to be a good person who makes a difference on environmental and global issues without sacrificing too much convenience, but its difficult to navigate information. When thinking about her uninhibited consumption of water, she feels embarassed, especially because she uses more than others. She doesn’t really know why she feels bad, as there is no water shortage in Norway...'
+    body: 'Naomi wants to be a good person who makes a difference on environmental and global issues without sacrificing too much convenience, but its difficult to navigate information. When thinking about her uninhibited consumption of water, she feels embarassed, especially because she uses more than others. She doesn’t really know why she feels bad, as there is no water shortage in Norway...',
+      link: '/drops/context-scenario'
   },
   {
     imageSrc: problemImage,
     heading: 'Problem statement',
-    body: 'Users strongly believe that there are no reasons to conserve water in Norway, due to the apparent abundance of water, the low cost and flat-rate pricing model, and the hidden nature of the service and infrastructure. This leads users to waste water through uncritical consumption, causing unnecessary pollution and carbon emissions...'
+    body: 'Users strongly believe that there are no reasons to conserve water in Norway, due to the apparent abundance of water, the low cost and flat-rate pricing model, and the hidden nature of the service and infrastructure. This leads users to waste water through uncritical consumption, causing unnecessary pollution and carbon emissions...',
+    link: '/drops/problem-statement'
   },
   {
     imageSrc: ideationImage,
     heading: 'Ideation workshop',
-    body: 'I have chosen to use the mind mapping and the brainstorming ideation techniques, as these are more suitable for conducting a solo workshop. I will set a timer for each ideation exercise, to apply some time pressure, which will help to focus on quantity over quality to encourage creativity. Before starting, I’ll read through notes from the secondary research, the problem statement, vision statement, insights, my study notes on Norman’s three levels of design and the persona...'
+    body: 'I have chosen to use the mind mapping and the brainstorming ideation techniques, as these are more suitable for conducting a solo workshop. I will set a timer for each ideation exercise, to apply some time pressure, which will help to focus on quantity over quality to encourage creativity. Before starting, I’ll read through notes from the secondary research, the problem statement, vision statement, insights, my study...',
+    link: '/drops/persona'
   },
 ])
 
@@ -120,7 +124,6 @@ Because Norwegians think about water as an inexhaustable, renewable resource, th
             <img :src="item.imageSrc" alt="" class="" />
             <h4 class="pt-8 text-base font-bold">{{ item.heading }}</h4>
             <p class="pt-3 text-sm">{{ item.body }}</p>
-            <a>Read more</a>
           </div>
         </article>
       </li>
@@ -132,8 +135,11 @@ Because Norwegians think about water as an inexhaustable, renewable resource, th
           <div class="">
             <img :src="item.imageSrc" alt="" class="" />
             <h4 class="pt-8 text-base font-bold">{{ item.heading }}</h4>
-            <p class="pt-3 text-sm">{{ item.body }}</p>
+            <div class="h-44">
+              <p class="pt-3 text-sm">{{ item.body }}</p>
+            </div>
           </div>
+          <RouterLink :to="item.link" class="py-4 text-xs font-semibold uppercase hover:underline"><span class="hover:pr-2">Read more</span><img src="../assets/icons/button-arrow.svg" class="inline pl-4 hover:pl-6" /></RouterLink>
         </article>
       </li>
     </SliderSection>

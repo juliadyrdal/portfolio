@@ -28,6 +28,21 @@ const router = createRouter({
       component: () => import("../views/DropsView.vue"),
     },
     {
+      path: "/drops/persona",
+      name: "drops-persona",
+      component: () => import("../views/DropsPersonaView.vue"),
+    },
+    {
+      path: "/drops/context-scenario",
+      name: "drops-context-scenario",
+      component: () => import("../views/DropsContextScenarioView.vue"),
+    },
+    {
+      path: "/drops/problem-statement",
+      name: "drops-problem-statement",
+      component: () => import("../views/DropsProblemView.vue"),
+    },
+    {
       path: "/fjordtours",
       name: "fjordtours",
       component: () => import("../views/FjordView.vue"),
