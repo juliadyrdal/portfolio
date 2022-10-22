@@ -84,13 +84,13 @@ const refineItems = reactive([
     imageSrc: analysisImage,
     heading: 'Wireflows',
     body: 'Efficiency of use is imperative. Because the user work with many moving pieces of which Fjordtours is only one part of the puzzle, they are too busy to deal with systems working against them, or learning to navigate the idiosyncracies of particular systems...',
-    link: '/drops/persona',
+    link: '/fjordtours/visual-hierarchy',
   },
   {
     imageSrc: analysisImage,
     heading: 'Visual and informational hierarchy',
     body: 'Agents often overlook the information that they need, and as a result contact Fjordtours’ internal booking team with simple inquiries, which is time consuming and inefficient for both parties to deal with. We know from research that users want more digestible information, which is especially important in a busy work environment...',
-    link: '/drops/persona',
+    link: '/fjordtours/visual-hierarchy',
   },
 ])
 </script>

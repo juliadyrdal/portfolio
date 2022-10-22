@@ -67,6 +67,11 @@ const router = createRouter({
       name: "fjordtours-design-principles",
       component: () => import("../views/FjordDesignPrinciplesView.vue"),
     },
+    {
+      path: "/fjordtours/visual-hierarchy",
+      name: "fjordtours-visual-hierarchy",
+      component: () => import("../views/FjordVisualHierarchyView.vue"),
+    },
   ],
   scrollBehavior (to, from, savedPosition) {
     if (to.hash) {
