@@ -72,7 +72,7 @@ const refineItems = reactive([
     imageSrc: atomicImage,
     heading: 'UX design patterns',
     body: 'The solution is based on several different design patterns, as combining them lets us create the tool that fits our users’ unique needs. The search box is partly a command palette, as the user can execute short cut commands when the element is in focus...',
-    link: '/drops/persona',
+    link: '/fjordtours/design-patterns',
   },
   {
     imageSrc: analysisImage,
