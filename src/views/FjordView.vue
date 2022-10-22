@@ -78,7 +78,7 @@ const refineItems = reactive([
     imageSrc: analysisImage,
     heading: 'Design principles',
     body: 'As the solution is a tool that agents use as part of their job, in a work environment, ergonomics which support productivity, efficiency and comfort are particularily important. Although they are using the interface as professionals, agents are still users, and the same psychological processes and phenomena still...',
-    link: '/drops/persona',
+    link: '/fjordtours/design-principles',
   },
   {
     imageSrc: analysisImage,
