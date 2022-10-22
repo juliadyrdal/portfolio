@@ -66,7 +66,7 @@ const refineItems = reactive([
     imageSrc: methodsImage,
     heading: 'Key task flows',
     body: 'In order to make sure that we create a tool that supports rather than interrupts the user’s workflow, with paths and operations matching what the user is trying to do, we need to build our interface around the key tasks and subtasks that we have identified.',
-    link: '/drops/persona',
+    link: '/fjordtours/key-task-flows',
   },
   {
     imageSrc: atomicImage,

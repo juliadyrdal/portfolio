@@ -52,6 +52,11 @@ const router = createRouter({
       name: "fjordtours-conceptual-model",
       component: () => import("../views/FjordConceptualModelView.vue"),
     },
+    {
+      path: "/fjordtours/key-task-flows",
+      name: "fjordtours-key-task-flows",
+      component: () => import("../views/FjordKeyTasksView.vue"),
+    },
   ],
   scrollBehavior (to, from, savedPosition) {
     if (to.hash) {
