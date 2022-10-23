@@ -17,6 +17,13 @@ import methodsImage from '@/assets/digging-gold.png'
 import atomicImage from '@/assets/tired-operator.png'
 import analysisImage from '@/assets/thinking-hard.png'
 
+import conceptImage from '@/assets/lake-red-cabin.png'
+import keyFlowsImage from '@/assets/fishing-village.png'
+import designPatternsImage from '@/assets/fjordview.png'
+import designPrinciplesImage from '@/assets/autumn-landscape.png'
+import wireFlowsImage from '@/assets/reindeer.png'
+import VisualHierarchyImage from '@/assets/trolltunga.png'
+
 const changeItems = reactive([
   {
     heading: 'Increased focus on B2B sales',
@@ -57,37 +64,37 @@ const researchItems = reactive([
 
 const refineItems = reactive([
   {
-    imageSrc: goalsImage,
+    imageSrc: conceptImage,
     heading: 'Conceptual and mental model',
     body: 'When an agent comes to the Fjordtours B2B portal to complete a task in their work flow, they have to translate what it is that they want to do, into the operations provided by the tool. This translation requires more cognitive effort if the operations offered maps poorly onto the users’ goal (referred to by cognitive...',
     link: 'fjordtours/conceptual-model',
   },
   {
-    imageSrc: methodsImage,
+    imageSrc: keyFlowsImage,
     heading: 'Key task flows',
     body: 'In order to make sure that we create a tool that supports rather than interrupts the user’s workflow, with paths and operations matching what the user is trying to do, we need to build our interface around the key tasks and subtasks that we have identified.',
     link: '/fjordtours/key-task-flows',
   },
   {
-    imageSrc: atomicImage,
+    imageSrc: designPatternsImage,
     heading: 'UX design patterns',
     body: 'The solution is based on several different design patterns, as combining them lets us create the tool that fits our users’ unique needs. The search box is partly a command palette, as the user can execute short cut commands when the element is in focus...',
     link: '/fjordtours/design-patterns',
   },
   {
-    imageSrc: analysisImage,
+    imageSrc: designPrinciplesImage,
     heading: 'Design principles',
     body: 'As the solution is a tool that agents use as part of their job, in a work environment, ergonomics which support productivity, efficiency and comfort are particularily important. Although they are using the interface as professionals, agents are still users, and the same psychological processes and phenomena still...',
     link: '/fjordtours/design-principles',
   },
   {
-    imageSrc: analysisImage,
+    imageSrc: wireFlowsImage,
     heading: 'Wireflows',
     body: 'Efficiency of use is imperative. Because the user work with many moving pieces of which Fjordtours is only one part of the puzzle, they are too busy to deal with systems working against them, or learning to navigate the idiosyncracies of particular systems...',
     link: '/fjordtours/visual-hierarchy',
   },
   {
-    imageSrc: analysisImage,
+    imageSrc: VisualHierarchyImage,
     heading: 'Visual and informational hierarchy',
     body: 'Agents often overlook the information that they need, and as a result contact Fjordtours’ internal booking team with simple inquiries, which is time consuming and inefficient for both parties to deal with. We know from research that users want more digestible information, which is especially important in a busy work environment...',
     link: '/fjordtours/visual-hierarchy',
@@ -201,7 +208,7 @@ const refineItems = reactive([
     </section>
     <SliderSection titleHeading="Refining the solution" heading="Information architecture and structure" sliderSectionClass="bg-white">
       <li v-for="item in refineItems" :key="item.heading">
-        <article class="w-96">
+        <article class="w-80">
           <div class="">
             <img :src="item.imageSrc" alt="" class="" />
             <h4 class="pt-8 text-base font-bold">{{ item.heading }}</h4>
