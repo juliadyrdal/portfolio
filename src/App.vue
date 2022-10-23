@@ -2,6 +2,7 @@
 import { RouterLink, RouterView } from "vue-router";
 import { useSanityClient } from 'vue-sanity'
 import TheHeader from "./components/layout/TheHeader.vue";
+import TheFooter from "./components/layout/TheFooter.vue";
 
 export default {
     name: "App",
@@ -13,7 +14,7 @@ export default {
             useCdn: process.env.NODE_ENV === "production",
         });
     },
-    components: { TheHeader }
+    components: { TheHeader, TheFooter }
 }
 </script>
 
@@ -21,6 +22,8 @@ export default {
   <TheHeader />
 
   <RouterView />
+
+  <TheFooter />
 </template>
 
 <style scoped>
