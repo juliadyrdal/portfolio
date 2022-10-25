@@ -13,7 +13,7 @@ const route = useRoute();
       <span class="">
         <RouterLink to="/projects" class="hover:underline underline-offset-2 decoration-2 decoration-primary-medium">Projects</RouterLink>
         <RouterLink to="/about" class="pl-8 hover:underline underline-offset-2 decoration-2 decoration-primary-medium">Experience</RouterLink>
-        <a class="pl-8 hover:underline underline-offset-2 decoration-2 decoration-primary-medium" href="mailto:hello@juliadyrdal.com">hello@juliadyrdal.com</a>
+        <a class="pl-8 hover:underline underline-offset-2 decoration-2 decoration-primary-medium" href="mailto:juliadyrdal@pm.me">juliadyrdal@pm.me</a>
       </span>
     </nav>
   </header>
