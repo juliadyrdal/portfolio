@@ -221,14 +221,15 @@ function showTabOne() {
       </div>
       <div class="container mx-auto"><p class="pt-6 text-sm uppercase text-gray">Piecing together the puzzle with no reference</p></div>
     </section>
-    <section class="mb-24 pb-24 bg-surface-light">
+    <section class="mb-24 pb-24">
       <div class="container mx-auto">
         <h3 class="pt-20 text-lg font-medium uppercase">Getting Personal</h3>
         <h2 class="py-6 text-4xl font-semibold leading-10 w-1/4">
           Incoming tour operator
         </h2>
+      </div>
         <div class="mt-12">
-          <div class="container mx-auto pb-4 border border-l-0 border-t-0 border-r-0 border-black">
+          <div class="container mx-auto pb-12 pt-6 border border-l-0 border-b-0 border-r-0 border-black">
             <ul class="flex pt-1">
           <li class="mr-12 flex items-center text-sm">
             <img
@@ -261,7 +262,9 @@ function showTabOne() {
           </li>
         </ul>
       </div>
-        <div class="mt-20 mb-12">
+      <div class="pb-24 bg-surface-light">
+        <div class="container mx-auto">
+          <div class="mb-12 pt-12">
           <h4 class="text-xl uppercase font-semibold">Caroline Baggini</h4>
         </div>
         <div class="flex">
@@ -269,7 +272,7 @@ function showTabOne() {
             <img src="../assets/fjordpersona.png" alt="">
           </div>
           <div class="basis-2/3">
-            <h3 class="pb-4 font-semibold">Bio</h3>
+            <h4 class="pb-4 font-semibold">Bio</h4>
             <p class="w-5/6 leading-7">Born to a New Zealand mother and Italian father, Caroline has travelled across the globe since before she could walk. After studying art history in Italy, she worked as an event manager for a Swiss gallery, before being made redundant soon after the pandemic closed down public spaces. As people started travelling internationally again, Caroline got a new job as an agent for an incoming tour operator, selling tours to Northern Europe. She is motivated by giving travellers a unique experience and a memory for life.</p>
             <div>
               <h4 class="mb-6 mt-10 font-semibold">Motivations</h4>
@@ -288,7 +291,10 @@ function showTabOne() {
               </div>
               </div>
             </div>
+            <h4 class="py-6 font-semibold">Pains and frustrations</h4>
+            <p class="w-5/6 leading-7"></p>
           </div>
+        </div>
         </div>
       </div>
       </div>
