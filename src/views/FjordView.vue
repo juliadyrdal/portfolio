@@ -1,7 +1,7 @@
 <script setup>
 import { useSanityFetcher } from "vue-sanity";
 import { RouterLink, RouterView } from "vue-router";
-import { reactive } from "vue";
+import { reactive, ref, computed } from "vue";
 import PageHeader from "../components/project/PageHeader.vue"
 import CaseIntroduction from "../components/project/CaseIntroduction.vue"
 import SliderSection from "../components/SliderSection.vue"
@@ -100,6 +100,38 @@ const refineItems = reactive([
     link: '/fjordtours/visual-hierarchy',
   },
 ])
+
+const tabOne = ref(true);
+
+const buttonOneClass = computed(() => ({
+  'text-white': tabOne.value,
+  'font-medium': tabOne.value,
+  'bg-[#1D3666]': tabOne.value,
+  'text-graydark': !tabOne.value,
+  'border': !tabOne.value,
+  'border-gray': !tabOne.value,
+}));
+
+const buttonTwoClass = computed(() => ({
+  'text-white': !tabOne.value,
+  'font-medium': !tabOne.value,
+  'bg-[#1D3666]': !tabOne.value,
+  'text-graydark': tabOne.value,
+  'border': tabOne.value,
+  'border-gray': tabOne.value,
+}));
+
+function showTabTwo() {
+  if (tabOne.value === true) {
+    tabOne.value = false;
+  }
+}
+
+function showTabOne() {
+  if (tabOne.value === false) {
+    tabOne.value = true;
+  }
+}
 </script>
 
 <template>
@@ -220,5 +252,63 @@ const refineItems = reactive([
         </article>
       </li>
     </SliderSection>
+    <section class="pb-24 bg-surface-light">
+      <div class="container mx-auto">
+        <div class="border border-l-0 border-t-0 border-r-0 border-gray">
+      <h3 class="pt-20 text-lg font-medium uppercase">Prototype</h3>
+      <h2 class="py-6 text-4xl font-semibold leading-10 w-1/2">
+        Adding interactivity
+      </h2>
+    </div>
+    <div class="my-8">
+      <button
+        @click="showTabOne"
+        class="mr-4 px-5 py-2 rounded-full" :class="buttonOneClass"
+        >Flow 1</button
+      ><button
+        @click="showTabTwo"
+        class="px-5 py-2 rounded-full" :class="buttonTwoClass"
+        >Flow 2</button>
+    </div>
+    <!-- First tab, tabOne -->
+    <div v-if="tabOne" class="mt-16 grid grid-cols-2 gap-12">
+      <div>
+        <img src="../assets/fjordproto/flow1.png">
+      </div>
+      <div>
+        <h4 class="py-2 text-xl  font-semibold">Flow</h4>
+        <p class="pb-12 block">Find info about specific order with key navigation</p>
+        <a
+              target="_blank"
+              href="https://www.figma.com/proto/NiWbRFRECC0q986AiqdROT/Fjordtours-B2B---search?page-id=1%3A2286&node-id=3%3A2495&viewport=1414%2C591%2C0.81&scaling=min-zoom&starting-point-node-id=3%3A2495&show-proto-sidebar=1"
+              class="px-6 py-4 bg-white text-sm hover:underline"
+              >View Figma prototype<img
+                src="../assets/icons/button-arrow.svg"
+                alt="arrow icon"
+                class="inline pl-4"
+            /></a>
+      </div>
+    </div>
+    <!-- Second tab, tabTwo -->
+    <div v-if="!tabOne" class="mt-16 grid grid-cols-2 gap-12">
+      <div>
+        <img src="../assets/fjordproto/flow2.png">
+      </div>
+      <div>
+        <h4 class="py-2 text-xl  font-semibold">Flow</h4>
+        <p class="pb-12 block">Contact support regarding specific order</p>
+        <a
+              target="_blank"
+              href="https://www.figma.com/proto/NiWbRFRECC0q986AiqdROT/Fjordtours-B2B---search?page-id=1%3A2286&node-id=3%3A3877&viewport=1414%2C591%2C0.81&scaling=min-zoom&starting-point-node-id=3%3A3877&show-proto-sidebar=1"
+              class="px-6 py-4 bg-white text-sm hover:underline"
+              >View Figma prototype<img
+                src="../assets/icons/button-arrow.svg"
+                alt="arrow icon"
+                class="inline pl-4"
+            /></a>
+      </div>
+    </div>
+      </div>
+    </section>
   </main>
 </template>
