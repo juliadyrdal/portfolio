@@ -221,6 +221,78 @@ function showTabOne() {
       </div>
       <div class="container mx-auto"><p class="pt-6 text-sm uppercase text-gray">Piecing together the puzzle with no reference</p></div>
     </section>
+    <section class="mb-24 pb-24 bg-surface-light">
+      <div class="container mx-auto">
+        <h3 class="pt-20 text-lg font-medium uppercase">Getting Personal</h3>
+        <h2 class="py-6 text-4xl font-semibold leading-10 w-1/4">
+          Incoming tour operator
+        </h2>
+        <div class="mt-12">
+          <div class="container mx-auto pb-4 border border-l-0 border-t-0 border-r-0 border-black">
+            <ul class="flex pt-1">
+          <li class="mr-12 flex items-center text-sm">
+            <img
+              src="../assets/icons/birthday.svg"
+              alt="icon"
+              class="pr-2 w-6"
+            /><span class="pr-1 font-semibold">Age </span
+            >29
+          </li>
+          <li class="mr-12 flex items-center text-sm">
+            <img
+              src="../assets/icons/pin.svg"
+              alt="icon"
+              class="pr-2 w-6"
+            /><span class="pr-1 font-semibold">Bern, </span>Switzerland
+          </li>
+          <li class="mr-12 flex items-center text-sm">
+            <img
+              src="../assets/icons/academic.svg"
+              alt="icon"
+              class="pr-2 w-6"
+            /> <span class="pr-1">Studied </span><span class="pr-1 font-semibold"> Art History </span>at Bologna
+          </li>
+          <li class="flex items-center text-sm">
+            <img
+              src="../assets/icons/heart.svg"
+              alt="icon"
+              class="pr-2 w-6"
+            />In a relationship
+          </li>
+        </ul>
+      </div>
+        <div class="mt-20 mb-12">
+          <h4 class="text-xl uppercase font-semibold">Caroline Baggini</h4>
+        </div>
+        <div class="flex">
+          <div class="mr-16 basis-1/3">
+            <img src="../assets/fjordpersona.png" alt="">
+          </div>
+          <div class="basis-2/3">
+            <h3 class="pb-4 font-semibold">Bio</h3>
+            <p class="w-5/6 leading-7">Born to a New Zealand mother and Italian father, Caroline has travelled across the globe since before she could walk. After studying art history in Italy, she worked as an event manager for a Swiss gallery, before being made redundant soon after the pandemic closed down public spaces. As people started travelling internationally again, Caroline got a new job as an agent for an incoming tour operator, selling tours to Northern Europe. She is motivated by giving travellers a unique experience and a memory for life.</p>
+            <div>
+              <h4 class="mb-6 mt-10 font-semibold">Motivations</h4>
+              <div class="grid grid-cols-3">
+                <div>
+                <h5 class="pb-2 text-sm uppercase">Create positive experiences</h5>
+                <img class="w-52" src="../assets/persona-graph-experiences.svg" alt="">
+              </div>
+              <div>
+                <h5 class="pb-2 text-sm uppercase">Career advancement</h5>
+                <img class="w-52" src="../assets/persona-graph-career.svg" alt="">
+              </div>
+              <div>
+                <h5 class="pb-2 text-sm uppercase">Enjoyment</h5>
+                <img class="w-52" src="../assets/persona-graph-enjoyment.svg" alt="">
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
     <section class="">
       <div class="container mx-auto">
         <div class="basis-1/2">
