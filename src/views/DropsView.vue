@@ -21,6 +21,13 @@ import methodsImage from '@/assets/methods.png'
 import analysisImage from '@/assets/analysis.png'
 import researchImage from '@/assets/recycle.svg'
 
+import conceptImage from '@/assets/key-path-1.png'
+import keyFlowsImage from '@/assets/ux-flows.png'
+import designPatternsImage from '@/assets/information-architecture.png'
+import designPrinciplesImage from '@/assets/autumn-landscape.png'
+import wireFlowsImage from '@/assets/reindeer.png'
+import VisualHierarchyImage from '@/assets/trolltunga.png'
+
 
 const defineItems = reactive([
   {
@@ -70,6 +77,45 @@ const researchItems = reactive([
     heading: 'Analysis',
     body: 'To analyse the research data from both primary and secondary research, I used affinity mapping to sort facts and discover patterns and themes.'
   },
+])
+
+const refineItems = reactive([
+  {
+    imageSrc: conceptImage,
+    heading: 'Key path scenario',
+    body: 'Through using her new app Naomi now knows how much water she uses in litres, but still has no idea if this is too much. Through browsing the ‘My data’ section of the app, Naomi discovers that she uses a lot more water than the average in Denmark and much more than what’s needed to cover basic needs...',
+    link: 'fjordtours/conceptual-model',
+  },
+  {
+    imageSrc: keyFlowsImage,
+    heading: 'Key task flows',
+    body: 'In order to make sure that we create a tool that supports rather than interrupts the user’s workflow, with paths and operations matching what the user is trying to do, we need to build our interface around the key tasks and subtasks that we have identified.',
+    link: 'https://www.figma.com/file/4x2Zt2zGUSLXMbOFAmJx7G/Drops---IA?node-id=0%3A1',
+  },
+  {
+    imageSrc: designPatternsImage,
+    heading: 'Information architecture',
+    body: 'The solution is based on several different design patterns, as combining them lets us create the tool that fits our users’ unique needs. The search box is partly a command palette, as the user can execute short cut commands when the element is in focus...',
+    link: 'https://www.figma.com/file/4x2Zt2zGUSLXMbOFAmJx7G/Drops---IA?node-id=0%3A1',
+  },
+  // {
+  //   imageSrc: designPrinciplesImage,
+  //   heading: 'Design principles',
+  //   body: 'As the solution is a tool that agents use as part of their job, in a work environment, ergonomics which support productivity, efficiency and comfort are particularily important. Although they are using the interface as professionals, agents are still users, and the same psychological processes and phenomena still...',
+  //   link: '/fjordtours/design-principles',
+  // },
+  // {
+  //   imageSrc: wireFlowsImage,
+  //   heading: 'Wireflows',
+  //   body: 'Efficiency of use is imperative. Because the user work with many moving pieces of which Fjordtours is only one part of the puzzle, they are too busy to deal with systems working against them, or learning to navigate the idiosyncracies of particular systems...',
+  //   link: '/fjordtours/visual-hierarchy',
+  // },
+  // {
+  //   imageSrc: VisualHierarchyImage,
+  //   heading: 'Visual and informational hierarchy',
+  //   body: 'Agents often overlook the information that they need, and as a result contact Fjordtours’ internal booking team with simple inquiries, which is time consuming and inefficient for both parties to deal with. We know from research that users want more digestible information, which is especially important in a busy work environment...',
+  //   link: '/fjordtours/visual-hierarchy',
+  // },
 ])
 
 </script>
@@ -140,6 +186,20 @@ Because Norwegians think about water as an inexhaustable, renewable resource, th
             </div>
           </div>
           <RouterLink :to="item.link" class="py-4 text-xs font-semibold uppercase hover:underline"><span class="hover:pr-2">Read more</span><img src="../assets/icons/button-arrow.svg" class="inline pl-4 hover:pl-6" /></RouterLink>
+        </article>
+      </li>
+    </SliderSection>
+    <SliderSection titleHeading="Refining the solution" heading="Information architecture and structure" sliderSectionClass="bg-primary-light">
+      <li v-for="item in refineItems" :key="item.heading">
+        <article class="w-96">
+          <div class="">
+            <img :src="item.imageSrc" alt="" class="" />
+            <h4 class="pt-12 pb-4 text-xl font-medium">{{ item.heading }}</h4>
+            <div class="h-6">
+              <!-- <p class="pt-3 text-sm">{{ item.body }}</p> -->
+            </div>
+          </div>
+          <a :href="item.link" class="py-4 px-6 bg-white text-xs font-semibold uppercase hover:underline"><span class="hover:pr-2">View full in Figma</span><img src="../assets/icons/button-arrow.svg" class="inline pl-4 hover:pl-6" /></a>
         </article>
       </li>
     </SliderSection>
