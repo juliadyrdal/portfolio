@@ -7,7 +7,7 @@ const route = useRoute();
 </script>
 
 <template>
-  <header class="px-8 py-4 text-secondary" :class="[route.name === 'home' ? 'bg-primary-light' : '']">
+  <header class="px-8 py-4 text-secondary" :class="[route.name === 'home' ? 'bg-white' : '']">
     <nav class="flex justify-between">
       <RouterLink to="/" class="">Julia Dyrdal</RouterLink>
       <span class="">
