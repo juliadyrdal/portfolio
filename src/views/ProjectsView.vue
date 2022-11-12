@@ -1,6 +1,10 @@
 <script setup>
 import { useSanityFetcher } from "vue-sanity";
 import { RouterLink, RouterView } from "vue-router";
+import ProjectCard from "../components/ui/ProjectCard.vue";
+
+import fjordtoursImage from '@/assets/fjordtours-thumbnail.png'
+import dropsImage from '@/assets/drops-thumbnail.png'
 </script>
 
 <template>
@@ -10,21 +14,7 @@ import { RouterLink, RouterView } from "vue-router";
     <p class="py-2 pt-8 font-semibold"><a target="_blank" href="https://github.com/juliadyrdal" class="pr-2 hover:underline">Github</a> | <a target="_blank" href="https://www.linkedin.com/in/juliadyrdal" class="pl-2 hover:underline">LinkedIn</a></p>
   </section>
   <section class="container mx-auto mt-12">
-    <article class="flex items-center bg-surface-secondary">
-      <img src="../assets/fjordtours-thumbnail.png" alt="" class="w-2/6">
-      <div class="ml-16">
-        <p class="pb-2 text-lg text-font-secondary font-medium">Case Study<span class="px-3">|</span>UX design</p>
-        <RouterLink to="/fjordtours"><h2 class="my-7 w-3/4 text-black text-4xl font-medium hover:underline"><span class="font-black">Fjordtours</span> – A new workflow for B2B customers</h2></RouterLink>
-        <p class="text-sm text-font-secondary uppercase">Student internship</p>
-      </div>
-    </article>
-    <article class="mt-12 flex items-center bg-surface-primary">
-      <img src="../assets/drops-thumbnail.png" alt="" class="w-2/6">
-      <div class="ml-16">
-        <p class="pb-2 text-lg text-font-primary font-medium">Case Study<span class="px-3">|</span>UX design</p>
-        <RouterLink to="/drops"><h2 class="my-7 w-3/4 text-black text-4xl font-medium hover:underline"><span class="font-black">Drops</span> – Save water through awareness and incentives</h2></RouterLink>
-        <p class="text-sm text-font-secondary uppercase text-font-primary">Course assignment</p>
-      </div>
-    </article>
+    <ProjectCard title="Fjordtours" subTitle="A new workflow for B2B customers" projectTag="UX Design" :imageSrc="fjordtoursImage" linkPath="/fjordtours" description="Student internship" bgColor="bg-surface-secondary" fontColor="text-font-secondary" />
+    <ProjectCard class="mt-12" title="Drops" subTitle="Save water through awareness and incentives" projectTag="UX Design" :imageSrc="dropsImage" linkPath="/drops" description="Course assignment" bgColor="bg-surface-primary" fontColor="text-font-primary" />
   </section>
 </template>
