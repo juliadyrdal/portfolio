@@ -17,7 +17,7 @@ const props = defineProps({
         class="mt-6 pt-6 border border-black border-l-0 border-b-0 border-r-0"
       >
         <ul class="flex pt-1">
-          <li class="mr-12 flex items-center text-sm">
+          <li class="mr-12 lg:flex items-center text-sm">
             <img
               src="../../assets/icons/academic.svg"
               alt="icon"
@@ -25,14 +25,14 @@ const props = defineProps({
             /><span class="pr-1 font-semibold">Project type:</span
             >{{ projectType }}
           </li>
-          <li class="mr-12 flex items-center text-sm">
+          <li class="mr-12 lg:flex items-center text-sm">
             <img
               src="../../assets/icons/calendar.svg"
               alt="icon"
               class="pr-2 w-6"
             /><span class="pr-1 font-semibold">Duration:</span>{{ duration }}
           </li>
-          <li class="flex items-center text-sm">
+          <li class="lg:flex items-center text-sm">
             <img
               src="../../assets/icons/person.svg"
               alt="icon"

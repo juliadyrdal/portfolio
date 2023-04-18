@@ -14,14 +14,14 @@ const props = defineProps({
 </script>
 
 <template>
-  <section class="container mx-auto">
-    <div class="mt-24 flex">
+  <section class="container mx-8 lg:mx-auto">
+    <div class="mt-24 flex flex-col lg:flex-row">
       <div class="basis-1/2">
         <h1 class="pt-8 text-8xl font-medium">{{ title }}</h1>
         <p class="pt-10 pb-12 leading-8">{{ paragraph }}</p>
       </div>
-      <div class="basis-1/2 flex justify-end">
-        <img :src="imageSrc" class="w-9/12" :class="imageClass" />
+      <div class="basis-1/2 flex lg:justify-end">
+        <img :src="imageSrc" class="w-full lg:w-9/12" :class="imageClass" />
       </div>
     </div>
     <div class="pb-4 mt-8 border border-gray border-t-0 border-l-0 border-r-0">
