@@ -11,7 +11,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <section class="container mx-8 lg:mx-auto my-32">
+  <section class="container mx-4 md:mx-8 lg:mx-auto my-32">
     <p class="text-lg text-font-primary font-medium">{{ titleHeading }}</p>
     <h2 class="pt-4 pb-4 text-black text-6xl font-medium">{{ heading }}</h2>
     <p

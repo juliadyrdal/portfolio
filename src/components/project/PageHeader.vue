@@ -14,7 +14,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <section class="container mx-8 lg:mx-auto">
+  <section class="container mx-4 md:mx-8 lg:mx-auto">
     <div class="mt-24 flex flex-col lg:flex-row">
       <div class="basis-1/2">
         <h1 class="pt-8 text-8xl font-medium">{{ title }}</h1>
